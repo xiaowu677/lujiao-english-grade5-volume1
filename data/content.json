@@ -1,0 +1,915 @@
+{
+  "version": "2.1",
+  "grade": 5,
+  "volume": "上册",
+  "publisher": "鲁教版",
+  "units": [
+    {
+      "id": "unit1",
+      "title": "Teachers and Friends",
+      "titleZh": "老师与朋友",
+      "acceptance": {
+        "Teachers’ Day": [
+          "On {{word}}, students often thank their teachers with cards.",
+          "在{{word}}，学生们常用贺卡感谢老师。"
+        ],
+        "kind": [
+          "It is {{word}} of you to help the lost child.",
+          "你帮助走失的孩子真{{word}}。"
+        ],
+        "September": [
+          "Our new school year begins in {{word}}.",
+          "我们的新学年在{{word}}开始。"
+        ],
+        "young": [
+          "The {{word}} tree needs a small stick for support.",
+          "这棵{{word}}的树需要一根细木棍支撑。"
+        ],
+        "must": [
+          "Passengers {{word}} wear seat belts in the car.",
+          "乘客在车里{{word}}系安全带。"
+        ],
+        "be": [
+          "When we talk about identity, we use the word {{word}}.",
+          "表达身份时，我们会用到单词 {{word}}。"
+        ],
+        "strict": [
+          "The coach is {{word}} about safety rules.",
+          "教练对安全规则要求{{word}}。"
+        ],
+        "shh": [
+          "{{word}}, the test is starting now.",
+          "{{word}}，考试现在开始了。"
+        ],
+        "thin": [
+          "The small cat looks {{word}}.",
+          "这只小猫看起来很{{word}}。"
+        ],
+        "was": [
+          "The past form of am/is is {{word}}.",
+          "am/is 的过去式是 {{word}}。"
+        ],
+        "pleasure": [
+          "It is a great {{word}} to hear your story.",
+          "听你讲故事是一件令人愉快的{{word}}。"
+        ],
+        "e-card": [
+          "Grandma opens the {{word}} on her phone.",
+          "奶奶在手机上打开{{word}}。"
+        ],
+        "really": [
+          "The soup is {{word}} delicious tonight.",
+          "今晚这汤{{word}}很好喝。"
+        ],
+        "handsome": [
+          "The {{word}} actor smiles at the children.",
+          "那位{{word}}的演员向孩子们微笑。"
+        ],
+        "had": [
+          "She {{word}} a new notebook last week.",
+          "她上周{{word}}一本新笔记本。"
+        ],
+        "grey": [
+          "The sky turns {{word}} before the storm.",
+          "暴风雨前天空变{{word}}。"
+        ],
+        "teenager": [
+          "The {{word}} helps younger children cross the road.",
+          "这个{{word}}帮助年幼的孩子过马路。"
+        ],
+        "were": [
+          "The past form of are is {{word}}.",
+          "are 的过去式是 {{word}}。"
+        ],
+        "his": [
+          "{{word}} bicycle is parked beside the library.",
+          "{{word}}自行车停在图书馆旁。"
+        ],
+        "student": [
+          "Every {{word}} wears a name card today.",
+          "今天每个{{word}}都戴名牌。"
+        ],
+        "ago": [
+          "The school opened ten years {{word}}.",
+          "这所学校十年{{word}}开办。"
+        ],
+        "active": [
+          "The {{word}} girl joins every school activity.",
+          "这个{{word}}的女孩参加每项学校活动。"
+        ],
+        "pretty": [
+          "The {{word}} dress has small blue flowers.",
+          "这条{{word}}的裙子有小蓝花。"
+        ],
+        "smart": [
+          "The {{word}} robot can answer simple questions.",
+          "这个{{word}}的机器人能回答简单问题。"
+        ],
+        "say": [
+          "Please {{word}} goodbye before you leave.",
+          "离开前请{{word}}再见。"
+        ],
+        "usually": [
+          "I {{word}} read for twenty minutes before bed.",
+          "我{{word}}睡前阅读二十分钟。"
+        ]
+      },
+      "scenes": [
+        {
+          "id": 1,
+          "title": "新学期老师",
+          "subtitle": "A warm welcome",
+          "wordEns": ["Teachers’ Day", "kind", "September", "young", "must", "be"],
+          "story": "September brings Teachers’ Day. A young visitor says every teacher must be kind and patient. The students smile and sing a song.",
+          "storyZh": "九月迎来了教师节。一位年轻的来访者说，每位老师都必须友善又有耐心。学生们微笑着唱起歌。"
+        },
+        {
+          "id": 2,
+          "title": "安静课堂",
+          "subtitle": "A quiet reading room",
+          "wordEns": ["strict", "shh", "thin", "was", "pleasure"],
+          "story": "The strict teacher says “shh” when the room becomes noisy. A thin girl was reading quietly, and the class takes pleasure in the story.",
+          "storyZh": "教室变得吵闹时，严格的老师轻声说“嘘”。一个瘦瘦的女孩正在安静阅读，全班都很享受这个故事。"
+        },
+        {
+          "id": 3,
+          "title": "旧照片",
+          "subtitle": "Pictures from the past",
+          "wordEns": ["e-card", "really", "handsome", "had", "grey", "teenager", "were"],
+          "story": "Mia sends an e-card and really likes the handsome picture. Her cousin had a grey hat as a teenager, and their photos were on the desk.",
+          "storyZh": "米娅发送了一张电子贺卡，她真的很喜欢那张英俊的照片。她的表亲青少年时有一顶灰帽子，他们的照片放在桌上。"
+        },
+        {
+          "id": 4,
+          "title": "新同学",
+          "subtitle": "Meet the new student",
+          "wordEns": ["his", "student", "ago", "active", "pretty", "smart", "say", "usually"],
+          "story": "His new student arrives two years ago. She is active and pretty, and her smart answers usually make the class say “wow”.",
+          "storyZh": "他的新学生两年前来到这里。她活泼又漂亮，她聪明的回答通常会让全班说“哇”。"
+        }
+      ]
+    },
+    {
+      "id": "unit2",
+      "title": "Feelings",
+      "titleZh": "情绪与感受",
+      "acceptance": {
+        "different": [
+          "Each child chooses a {{word}} book from the shelf.",
+          "每个孩子从书架上选一本{{word}}书。"
+        ],
+        "feeling": [
+          "A warm smile can show a kind {{word}}.",
+          "温暖的微笑可以表达友善的{{word}}。"
+        ],
+        "excited": [
+          "The fans are {{word}} about the final match.",
+          "球迷们对决赛感到{{word}}。"
+        ],
+        "sky": [
+          "Stars fill the {{word}} on a clear night.",
+          "晴朗的夜晚，星星布满{{word}}。"
+        ],
+        "angry": [
+          "The {{word}} boy speaks too loudly.",
+          "{{word}}的男孩说话太大声。"
+        ],
+        "lost": [
+          "We helped a {{word}} rabbit find its owner.",
+          "我们帮助一只{{word}}的兔子找到主人。"
+        ],
+        "sad": [
+          "The {{word}} film makes everyone cry.",
+          "这部{{word}}的电影让大家流泪。"
+        ],
+        "shout": [
+          "Do not {{word}} across the busy street.",
+          "不要隔着繁忙的街道{{word}}。"
+        ],
+        "shout at": [
+          "The coach asks us never to {{word}} a teammate.",
+          "教练让我们永远不要{{word}}队友。"
+        ],
+        "dog": [
+          "The {{word}} waits for its owner by the gate.",
+          "那只{{word}}在门口等候主人。"
+        ],
+        "glad": [
+          "We are {{word}} that you can join us.",
+          "我们很{{word}}你能加入我们。"
+        ],
+        "worried": [
+          "Mia looks {{word}} about the science speech.",
+          "米娅对科学演讲很{{word}}。"
+        ],
+        "game": [
+          "This number {{word}} is easy for young children.",
+          "这个数字{{word}}对幼儿来说很容易。"
+        ],
+        "play games": [
+          "We {{word}} quietly after finishing the test.",
+          "考试结束后我们安静地{{word}}。"
+        ],
+        "worry": [
+          "Please do not {{word}} about the small mistake.",
+          "请不要为小错误{{word}}。"
+        ],
+        "find": [
+          "Can you help me {{word}} my missing glove?",
+          "你能帮我{{word}}丢失的手套吗？"
+        ],
+        "her": [
+          "{{word}} younger brother is waiting outside.",
+          "{{word}}弟弟在外面等。"
+        ],
+        "saw": [
+          "I {{word}} a deer near the forest path.",
+          "我在森林小径附近{{word}}一只鹿。"
+        ],
+        "yesterday": [
+          "{{word}} was warm and sunny.",
+          "{{word}}温暖又晴朗。"
+        ],
+        "surprised": [
+          "Everyone was {{word}} by the magic trick.",
+          "每个人看到魔术后都很{{word}}。"
+        ]
+      },
+      "scenes": [
+        {
+          "id": 1,
+          "title": "不同心情",
+          "subtitle": "A changeable morning",
+          "wordEns": ["different", "feeling", "excited", "sky"],
+          "story": "Today offers different feelings. Mia feels excited when she sees the clear sky.",
+          "storyZh": "今天有不同的心情。米娅看到晴朗的天空时感到兴奋。"
+        },
+        {
+          "id": 2,
+          "title": "丢失的书",
+          "subtitle": "Angry and sad",
+          "wordEns": ["angry", "lost", "sad", "shout", "shout at"],
+          "story": "Ben becomes angry after he finds a lost book. He feels sad and wants to shout, but he does not shout at his friend.",
+          "storyZh": "本找到一本遗失的书后生气了。他感到伤心，想大声喊叫，但他没有对朋友大喊。"
+        },
+        {
+          "id": 3,
+          "title": "小狗来访",
+          "subtitle": "A worried friend",
+          "wordEns": ["dog", "glad", "worried", "game"],
+          "story": "A small dog runs into the classroom. Mia is glad to help and not worried about the game.",
+          "storyZh": "一只小狗跑进教室。米娅很高兴能帮忙，也不担心游戏。"
+        },
+        {
+          "id": 4,
+          "title": "昨日惊喜",
+          "subtitle": "Finding the ball",
+          "wordEns": ["play games", "worry", "find", "her", "saw", "yesterday", "surprised"],
+          "story": "The children play games after class. They do not worry when they cannot find her ball. They saw it yesterday, so everyone is surprised.",
+          "storyZh": "孩子们课后玩游戏。找不到她的球时，他们并不担心。他们昨天看见过球，所以每个人都很惊讶。"
+        }
+      ]
+    },
+    {
+      "id": "unit3",
+      "title": "Birthdays",
+      "titleZh": "生日与庆祝",
+      "acceptance": {
+        "when": [
+          "{{word}} will the school bus arrive?",
+          "校车{{word}}到？"
+        ],
+        "March": [
+          "The trees turn green in {{word}}.",
+          "树木在{{word}}变绿。"
+        ],
+        "May": [
+          "Our school fair is held in {{word}}.",
+          "我们的学校集市在{{word}}举行。"
+        ],
+        "April": [
+          "It often rains in {{word}}.",
+          "{{word}}经常下雨。"
+        ],
+        "again": [
+          "Please try the puzzle {{word}}.",
+          "请{{word}}试一次拼图。"
+        ],
+        "October": [
+          "The air becomes cool in {{word}}.",
+          "{{word}}空气变凉。"
+        ],
+        "present": [
+          "She wraps the {{word}} in red paper.",
+          "她用红纸把{{word}}包起来。"
+        ],
+        "open": [
+          "Please {{word}} the box slowly.",
+          "请慢慢{{word}}盒子。"
+        ],
+        "make a wish": [
+          "Everyone can {{word}} before blowing out the candles.",
+          "吹蜡烛前每个人都可以{{word}}。"
+        ],
+        "give": [
+          "I will {{word}} the last apple to my sister.",
+          "我会把最后一个苹果{{word}}妹妹。"
+        ],
+        "last": [
+          "We met the new teacher {{word}} Monday.",
+          "我们{{word}}一见到了新老师。"
+        ],
+        "made": [
+          "Grandma {{word}} soup for us yesterday.",
+          "奶奶昨天为我们{{word}}汤。"
+        ],
+        "drew": [
+          "He {{word}} a map on the blackboard.",
+          "他在黑板上{{word}}了一幅地图。"
+        ],
+        "parent": [
+          "One {{word}} came to help with the class party.",
+          "一位{{word}}来帮忙准备班级派对。"
+        ],
+        "dish": [
+          "The fish {{word}} smells wonderful.",
+          "这道鱼{{word}}闻起来很香。"
+        ],
+        "ate": [
+          "We {{word}} mooncakes under the stars.",
+          "我们在星空下{{word}}月饼。"
+        ],
+        "sang": [
+          "The class {{word}} together at the end of the show.",
+          "演出结束时全班一起{{word}}。"
+        ],
+        "did": [
+          "She {{word}} her best in the running race.",
+          "她在跑步比赛中{{word}}了最大努力。"
+        ]
+      },
+      "scenes": [
+        {
+          "id": 1,
+          "title": "春日月份",
+          "subtitle": "Months in bloom",
+          "wordEns": ["when", "March", "May", "April"],
+          "story": "When spring comes, March brings green leaves. May and April add flowers to the park.",
+          "storyZh": "春天到来时，三月带来绿叶。五月和四月为公园增添花朵。"
+        },
+        {
+          "id": 2,
+          "title": "十月礼物",
+          "subtitle": "A present in autumn",
+          "wordEns": ["again", "October", "present", "open"],
+          "story": "The class meets again in October. Mia opens a present and finds a note.",
+          "storyZh": "全班在十月再次相聚。米娅打开礼物，发现了一张便条。"
+        },
+        {
+          "id": 3,
+          "title": "生日许愿",
+          "subtitle": "A wish for Grandma",
+          "wordEns": ["make a wish", "give", "last", "made"],
+          "story": "Before the cake, everyone can make a wish. Mia gives Grandma the last card she made.",
+          "storyZh": "蛋糕端上来之前，每个人都可以许愿。米娅把最后一张自己制作的卡片送给奶奶。"
+        },
+        {
+          "id": 4,
+          "title": "家庭晚餐",
+          "subtitle": "Food, music and family",
+          "wordEns": ["drew", "parent", "dish", "ate", "sang", "did"],
+          "story": "Mia drew a picture for every parent. The dish smelled good, they ate together, and the children sang while Ben did the dishes.",
+          "storyZh": "米娅为每位家长画了一幅画。菜肴闻起来很香，大家一起吃饭，孩子们唱歌，本负责洗碗。"
+        }
+      ]
+    },
+    {
+      "id": "unit4",
+      "title": "Country Life",
+      "titleZh": "乡村生活",
+      "acceptance": {
+        "country": [
+          "My uncle lives in the {{word}} and grows rice.",
+          "我叔叔住在{{word}}，种植水稻。"
+        ],
+        "river": [
+          "The children follow the {{word}} to the bridge.",
+          "孩子们沿着{{word}}走到桥边。"
+        ],
+        "near": [
+          "Please sit {{word}} the window.",
+          "请坐在窗户{{word}}。"
+        ],
+        "village": [
+          "A new road connects the {{word}} to the city.",
+          "一条新路把{{word}}和城市连接起来。"
+        ],
+        "house": [
+          "Their {{word}} has a red roof and green door.",
+          "他们的{{word}}有红屋顶和绿门。"
+        ],
+        "lot": [
+          "The bag holds a {{word}} of apples.",
+          "这个袋子装了{{word}}苹果。"
+        ],
+        "lots of": [
+          "There are {{word}} books in the reading corner.",
+          "阅读角有{{word}}书。"
+        ],
+        "catch": [
+          "Try to {{word}} the falling leaf.",
+          "试着{{word}}飘落的叶子。"
+        ],
+        "interesting": [
+          "The museum has an {{word}} display about space.",
+          "博物馆有一个关于太空的{{word}}展览。"
+        ],
+        "any": [
+          "We do not have {{word}} milk in the fridge.",
+          "在否定句里，{{word}} 可以表示“一些”或“任何”。"
+        ],
+        "orchard": [
+          "The {{word}} is full of red apples.",
+          "{{word}}里结满了红苹果。"
+        ],
+        "like": [
+          "The white cloud looks {{word}} a sheep.",
+          "白云看起来{{word}}一只羊。"
+        ],
+        "cucumber": [
+          "Please cut the {{word}} into small pieces.",
+          "请把{{word}}切成小块。"
+        ],
+        "ground": [
+          "The children sit on the {{word}} under a tree.",
+          "孩子们坐在树下的{{word}}上。"
+        ],
+        "pick": [
+          "We can {{word}} strawberries in the garden.",
+          "我们可以在花园里{{word}}草莓。"
+        ],
+        "cousin": [
+          "My {{word}} sends me a photo every week.",
+          "我的{{word}}每周给我发一张照片。"
+        ],
+        "fourth": [
+          "Mia is the {{word}} child in the line.",
+          "米娅是队伍里的{{word}}个孩子。"
+        ],
+        "grader": [
+          "Every fifth {{word}} receives a new book.",
+          "每个五年级{{word}}都收到一本新书。"
+        ],
+        "field": [
+          "The tractor moves slowly across the {{word}}.",
+          "拖拉机缓慢驶过{{word}}。"
+        ],
+        "after": [
+          "We drink tea {{word}} dinner.",
+          "晚饭{{word}}我们喝茶。"
+        ],
+        "cow": [
+          "The {{word}} stands beside the wooden fence.",
+          "{{word}}站在木栅栏旁。"
+        ]
+      },
+      "scenes": [
+        {
+          "id": 1,
+          "title": "来到乡村",
+          "subtitle": "A quiet place",
+          "wordEns": ["country", "river", "near", "village", "house"],
+          "story": "A country village is quiet near the river. A small house stands between two trees.",
+          "storyZh": "一个乡村小村庄在河边显得很宁静。一座小房子立在两棵树之间。"
+        },
+        {
+          "id": 2,
+          "title": "果园篮筐",
+          "subtitle": "Collecting fruit",
+          "wordEns": ["lot", "lots of", "catch", "interesting", "any"],
+          "story": "There are lots of apples in the box, and a lot of juice too. The children catch a butterfly and find some interesting leaves, but they do not have any baskets.",
+          "storyZh": "盒子里有许多苹果，也有很多果汁。孩子们抓住一只蝴蝶，发现了一些有趣的叶子，但他们没有篮子。"
+        },
+        {
+          "id": 3,
+          "title": "采摘时光",
+          "subtitle": "In the orchard",
+          "wordEns": ["orchard", "like", "cucumber", "ground", "pick"],
+          "story": "The orchard looks like a green sea. They pick a cucumber from the ground and put it in a bag.",
+          "storyZh": "果园看起来像一片绿色的海。他们从地上摘了一根黄瓜，放进袋子里。"
+        },
+        {
+          "id": 4,
+          "title": "放学以后",
+          "subtitle": "A walk by the field",
+          "wordEns": ["cousin", "fourth", "grader", "field", "after", "cow"],
+          "story": "My cousin is a fourth grader. After school, we walk past the field and watch a cow.",
+          "storyZh": "我的表亲是一名四年级学生。放学后，我们走过田地，看着一头奶牛。"
+        }
+      ]
+    },
+    {
+      "id": "unit5",
+      "title": "Basketball",
+      "titleZh": "篮球运动",
+      "acceptance": {
+        "term": [
+          "We will study three new songs this {{word}}.",
+          "这个{{word}}我们将学习三首新歌。"
+        ],
+        "enjoy": [
+          "Many children {{word}} reading adventure stories.",
+          "许多孩子{{word}}读冒险故事。"
+        ],
+        "jump": [
+          "The cat can {{word}} onto the low wall.",
+          "猫能{{word}}到矮墙上。"
+        ],
+        "high": [
+          "The kite flies {{word}} above the trees.",
+          "风筝在树上方飞得很{{word}}。"
+        ],
+        "ball": [
+          "The orange {{word}} rolls under the bench.",
+          "橙色的{{word}}滚到长椅下。"
+        ],
+        "basket": [
+          "The {{word}} is made of bent wood.",
+          "这个{{word}}由弯曲的木条制成。"
+        ],
+        "pass": [
+          "Please {{word}} the salt to your grandpa.",
+          "请把盐{{word}}爷爷。"
+        ],
+        "shoot": [
+          "Mia will {{word}} from the middle of the court.",
+          "米娅将从球场中央{{word}}。"
+        ],
+        "win": [
+          "The class hopes to {{word}} the reading contest.",
+          "全班希望在阅读比赛中{{word}}。"
+        ],
+        "their": [
+          "The students put {{word}} bags under the desks.",
+          "学生们把{{word}}书包放在课桌下。"
+        ],
+        "team": [
+          "Our {{word}} meets in the gym every Tuesday.",
+          "我们的{{word}}每周二在体育馆集合。"
+        ],
+        "not": [
+          "The library is {{word}} open on Sunday.",
+          "图书馆星期日{{word}}开放。"
+        ],
+        "easy": [
+          "The first question is {{word}} to answer.",
+          "第一题很{{word}}回答。"
+        ],
+        "got": [
+          "She {{word}} a letter from her teacher yesterday.",
+          "她昨天从老师那里{{word}}一封信。"
+        ],
+        "shot": [
+          "He {{word}} from a long distance.",
+          "他从远处{{word}}。"
+        ],
+        "won": [
+          "Our class {{word}} the singing contest last month.",
+          "我们班上个月在歌唱比赛中{{word}}。"
+        ]
+      },
+      "scenes": [
+        {
+          "id": 1,
+          "title": "赛季开始",
+          "subtitle": "First practice",
+          "wordEns": ["term", "enjoy", "jump", "high"],
+          "story": "A new term begins, and the children enjoy their first practice. They jump high to touch the net.",
+          "storyZh": "新学期开始，孩子们很享受第一次训练。他们高高跳起去碰球网。"
+        },
+        {
+          "id": 2,
+          "title": "传球投篮",
+          "subtitle": "Practice on the court",
+          "wordEns": ["ball", "basket", "pass", "shoot"],
+          "story": "Mia holds the ball beside the basket. She will pass it and then shoot.",
+          "storyZh": "米娅在篮筐旁拿着球。她将把球传出去，然后投篮。"
+        },
+        {
+          "id": 3,
+          "title": "团队约定",
+          "subtitle": "Playing together",
+          "wordEns": ["win", "their", "team", "not"],
+          "story": "Our team hopes to win the match. Their coach says they must not stop.",
+          "storyZh": "我们队希望赢得比赛。他们的教练说绝不能停下来。"
+        },
+        {
+          "id": 4,
+          "title": "最后胜利",
+          "subtitle": "The final shot",
+          "wordEns": ["easy", "got", "shot", "won"],
+          "story": "The final shot was easy. Mia got the ball and shot again; in the end, her team won.",
+          "storyZh": "最后一次投篮并不难。米娅接到球再次投篮，最终她的球队获胜了。"
+        }
+      ]
+    },
+    {
+      "id": "unit6",
+      "title": "Role Models",
+      "titleZh": "榜样与成长",
+      "acceptance": {
+        "role": [
+          "The teacher gives each actor a different {{word}}.",
+          "老师给每位演员一个不同的{{word}}。"
+        ],
+        "model": [
+          "Our coach is a {{word}} of patience.",
+          "我们的教练是耐心的{{word}}。"
+        ],
+        "role model": [
+          "Mia's aunt is a {{word}} for young readers.",
+          "米娅的阿姨是年轻读者的{{word}}。"
+        ],
+        "wrote": [
+          "He {{word}} his name on the top of the page.",
+          "他在页面顶部{{word}}下自己的名字。"
+        ],
+        "medical": [
+          "The {{word}} team arrived after the accident.",
+          "{{word}}队在事故后赶到。"
+        ],
+        "scientist": [
+          "The {{word}} records the temperature every morning.",
+          "这位{{word}}每天早上记录温度。"
+        ],
+        "medical scientist": [
+          "The {{word}} studies a new medicine.",
+          "这位{{word}}研究一种新药。"
+        ],
+        "born": [
+          "The baby rabbit was {{word}} in the garden.",
+          "小兔子{{word}}在花园里。"
+        ],
+        "be born": [
+          "The phrase {{word}} tells us when or where a person came into the world.",
+          "短语 {{word}} 用来说明一个人何时何地出生。"
+        ],
+        "herb": [
+          "Mint is a {{word}} with a fresh smell.",
+          "薄荷是一种气味清新的{{word}}。"
+        ],
+        "took": [
+          "The repair {{word}} three hours.",
+          "这次维修{{word}}三个小时。"
+        ],
+        "amazing": [
+          "The view from the tower is {{word}}.",
+          "塔上的景色令人{{word}}。"
+        ],
+        "A.D.": [
+          "The temple was built in 800 {{word}}.",
+          "这座寺庙建于{{word}}800年。"
+        ],
+        "B.C.": [
+          "The old city existed in 200 {{word}}.",
+          "这座古城存在于{{word}}200年。"
+        ],
+        "paper": [
+          "Please write your name on a piece of {{word}}.",
+          "请在一张{{word}}上写下名字。"
+        ],
+        "found": [
+          "They {{word}} an old coin in the garden.",
+          "他们在花园里{{word}}了一枚旧硬币。"
+        ],
+        "hard": [
+          "Tom studies {{word}} for the spelling test.",
+          "汤姆为拼写测试{{word}}学习。"
+        ],
+        "work hard": [
+          "You must {{word}} to improve your writing.",
+          "你必须{{word}}来提高写作。"
+        ],
+        "more": [
+          "We need {{word}} chairs for the guests.",
+          "我们需要{{word}}椅子给客人。"
+        ],
+        "never": [
+          "My grandpa has {{word}} seen snow.",
+          "我爷爷{{word}}见过雪。"
+        ],
+        "gave": [
+          "The nurse {{word}} the child some water.",
+          "护士{{word}}孩子一些水。"
+        ],
+        "give up": [
+          "Please do not {{word}} when the puzzle is hard.",
+          "拼图很难时请不要{{word}}。"
+        ],
+        "round": [
+          "The bus travels {{word}} the lake.",
+          "公交车{{word}}着湖行驶。"
+        ],
+        "all year round": [
+          "The mountain looks beautiful {{word}}.",
+          "这座山{{word}}都很美。"
+        ],
+        "finally": [
+          "After three tries, Lily {{word}} opened the box.",
+          "三次尝试后，莉莉{{word}}打开了盒子。"
+        ],
+        "succeed": [
+          "You will {{word}} if you keep trying.",
+          "如果坚持尝试，你会{{word}}。"
+        ],
+        "a lot": [
+          "We learned {{word}} from the museum guide.",
+          "我们从博物馆讲解员那里学到了{{word}}。"
+        ],
+        "as": [
+          "She works {{word}} a library helper on Saturdays.",
+          "她星期六{{word}}图书馆帮手。"
+        ],
+        "volunteer": [
+          "A {{word}} helped us clean the park.",
+          "一位{{word}}帮我们打扫公园。"
+        ],
+        "together": [
+          "We planted the trees {{word}}.",
+          "我们{{word}}种树。"
+        ],
+        "cooking": [
+          "{{word}} with Grandma is fun.",
+          "和奶奶一起{{word}}很有趣。"
+        ],
+        "person": [
+          "Every {{word}} should follow the safety rules.",
+          "每个{{word}}都应遵守安全规则。"
+        ],
+        "because": [
+          "We stayed home {{word}} it was raining.",
+          "{{word}}下雨，我们待在家里。"
+        ]
+      },
+      "scenes": [
+        {
+          "id": 1,
+          "title": "身边的榜样",
+          "subtitle": "A special teacher",
+          "wordEns": ["role", "model", "role model", "wrote", "medical", "scientist", "medical scientist", "born", "be born"],
+          "story": "A teacher can be a role model. The scientist wrote about a medical worker, and a medical scientist helped a baby who was born in the town. People can be born in many places.",
+          "storyZh": "老师可以成为榜样。科学家写了一位医务工作者的故事，一位医学科学家帮助了出生在小镇上的宝宝。人们可以在许多地方出生。"
+        },
+        {
+          "id": 2,
+          "title": "古老发现",
+          "subtitle": "History and herbs",
+          "wordEns": ["herb", "took", "amazing", "A.D.", "B.C.", "paper", "found"],
+          "story": "The herb took time to grow. An amazing old temple from 500 A.D. appears on paper, and 300 B.C. is written beside it. We found the drawing in a book.",
+          "storyZh": "这种草药需要时间生长。纸上画着一座公元500年的惊人古庙，旁边写着公元前300年。我们在书里找到了这幅画。"
+        },
+        {
+          "id": 3,
+          "title": "坚持与付出",
+          "subtitle": "A map around the lake",
+          "wordEns": ["hard", "work hard", "more", "never", "gave", "give up", "round", "all year round"],
+          "story": "She works hard and must work hard every day. We need more practice so we never stop and never give up. The teacher gave us a map of the route round the lake, which is open all year round.",
+          "storyZh": "她努力学习，也必须每天努力。我们需要更多练习，所以从不停止。老师给了我们一张绕湖路线图，那条环湖路线全年开放。"
+        },
+        {
+          "id": 4,
+          "title": "社区厨房",
+          "subtitle": "Success through teamwork",
+          "wordEns": ["finally", "succeed", "a lot", "together", "as", "volunteer", "cooking", "person", "because"],
+          "story": "Finally, the team will succeed. We learn a lot together as volunteers. Cooking for every person is easier because we plan together.",
+          "storyZh": "团队最终会成功。我们作为志愿者一起学到了很多。因为大家一起计划，为每个人烹饪变得更轻松。"
+        }
+      ]
+    },
+    {
+      "id": "unit7",
+      "title": "Spring Festival",
+      "titleZh": "春节",
+      "acceptance": {
+        "traditional": [
+          "Dumplings are a {{word}} food in northern China.",
+          "饺子是中国北方的{{word}}食物。"
+        ],
+        "festival": [
+          "The music {{word}} begins at six.",
+          "音乐{{word}}六点开始。"
+        ],
+        "Christmas": [
+          "They sing carols on {{word}} Eve.",
+          "他们在{{word}}夜唱颂歌。"
+        ],
+        "December": [
+          "The days are short in {{word}}.",
+          "{{word}}白昼很短。"
+        ],
+        "Santa": [
+          "Children write a letter to {{word}}.",
+          "孩子们给{{word}}写信。"
+        ],
+        "people": [
+          "Many {{word}} wait outside the museum.",
+          "许多{{word}}在博物馆外等待。"
+        ],
+        "relative": [
+          "A {{word}} from Shanghai visits us every summer.",
+          "一位上海的{{word}}每年夏天来看我们。"
+        ],
+        "Spring Festival": [
+          "The family cleans the house before {{word}}.",
+          "这家人{{word}}前打扫房子。"
+        ],
+        "February": [
+          "{{word}} is the shortest month of the year.",
+          "{{word}}是一年中最短的月份。"
+        ],
+        "January": [
+          "Our winter holiday starts in {{word}}.",
+          "我们的寒假在{{word}}开始。"
+        ],
+        "firework": [
+          "A blue {{word}} opened above the river.",
+          "一束蓝色{{word}}在河面上绽放。"
+        ],
+        "wonderful": [
+          "We had a {{word}} time at the beach.",
+          "我们在海滩玩得很{{word}}。"
+        ],
+        "before": [
+          "Please wash your hands {{word}} lunch.",
+          "午饭{{word}}请洗手。"
+        ],
+        "put up": [
+          "They will {{word}} a new sign near the gate.",
+          "他们会在门口附近{{word}}一个新标牌。"
+        ],
+        "couplet": [
+          "Each {{word}} has two matching lines.",
+          "每副{{word}}有两句对称的话。"
+        ],
+        "Spring Festival couplets": [
+          "We read the words on the {{word}}.",
+          "我们读{{word}}上的文字。"
+        ],
+        "eve": [
+          "The whole family gathers on New Year's {{word}}.",
+          "新年{{word}}，全家团聚。"
+        ],
+        "next": [
+          "We will study the {{word}} unit tomorrow.",
+          "我们明天学习{{word}}单元。"
+        ],
+        "lucky": [
+          "Eight is a {{word}} number in Chinese culture.",
+          "八在中国文化中是{{word}}数字。"
+        ],
+        "money": [
+          "She puts the {{word}} into a small wallet.",
+          "她把{{word}}放进一个小钱包。"
+        ],
+        "lucky money": [
+          "Children say thank you for the {{word}}.",
+          "孩子们为{{word}}道谢。"
+        ]
+      },
+      "scenes": [
+        {
+          "id": 1,
+          "title": "冬日节日",
+          "subtitle": "A traditional season",
+          "wordEns": ["traditional", "festival", "Christmas", "December", "Santa", "people"],
+          "story": "A traditional festival brings people together at Christmas. December is near, and Santa visits the children.",
+          "storyZh": "一个传统节日在圣诞节让家人团聚。十二月临近，圣诞老人来看望孩子们。"
+        },
+        {
+          "id": 2,
+          "title": "春节团圆",
+          "subtitle": "A wonderful celebration",
+          "wordEns": ["relative", "Spring Festival", "February", "January", "firework", "wonderful"],
+          "story": "A relative returns for Spring Festival. In February and January, the night sky is full of firework colours and wonderful music.",
+          "storyZh": "一位亲戚回来过春节。二月和一月，夜空充满烟花的色彩和美妙的音乐。"
+        },
+        {
+          "id": 3,
+          "title": "张贴春联",
+          "subtitle": "Preparing the front door",
+          "wordEns": ["before", "put up", "couplet", "Spring Festival couplets", "eve"],
+          "story": "Before the big dinner, the family will put up a couplet. Spring Festival couplets shine beside the door on the eve.",
+          "storyZh": "丰盛晚餐前，一家人会张贴一副对联。除夕前夜，春联在门旁闪闪发亮。"
+        },
+        {
+          "id": 4,
+          "title": "新年祝福",
+          "subtitle": "Lucky money and hope",
+          "wordEns": ["next", "lucky", "money", "lucky money"],
+          "story": "Next year, Mia hopes for lucky days. She saves money and receives lucky money in a red packet.",
+          "storyZh": "明年，米娅期待幸运的日子。她攒钱，也收到红包里的压岁钱。"
+        }
+      ]
+    }
+  ]
+}

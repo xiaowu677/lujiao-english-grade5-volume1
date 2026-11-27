@@ -1,0 +1,12 @@
+{
+  "name": "word-planet-grade5-volume1",
+  "private": true,
+  "scripts": {
+    "build": "python tools/build_grade5.py",
+    "test": "python -m unittest tests.test_grade5_data tests.test_audio_catalog tests.test_audio_assets tests.test_audio_tool tests.test_deployment tests.test_release_artifacts -v && node --test tests/test_grade5_site.js",
+    "test:data": "python -m unittest tests.test_grade5_data -v",
+    "test:audio": "python -m unittest tests.test_audio_catalog tests.test_audio_assets tests.test_audio_tool -v",
+    "test:deployment": "python -m unittest tests.test_deployment tests.test_release_artifacts -v",
+    "test:browser": "node tests/browser_smoke.js"
+  }
+}

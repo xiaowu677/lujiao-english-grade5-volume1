@@ -1,0 +1,56 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v6
+        with:
+          enablement: true
+
+      - name: Stage public site
+        run: |
+          mkdir -p _site
+          cp index.html _site/index.html
+          touch _site/.nojekyll
+          for dir in outputs/v2.1-*; do
+            if [ -f "$dir/index.html" ]; then
+              mkdir -p "_site/$dir"
+              cp "$dir/index.html" "_site/$dir/index.html"
+            fi
+          done
+          mkdir -p _site/outputs/assets/audio/v2.1/en-GB-SoniaNeural
+          cp -R outputs/assets/audio/v2.1/en-GB-SoniaNeural/. \
+            _site/outputs/assets/audio/v2.1/en-GB-SoniaNeural/
+          test "$(find _site -name index.html | wc -l)" -eq 8
+          test "$(find _site/outputs/assets/audio/v2.1 -name '*.mp3' | wc -l)" -eq 493
+
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5

@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+tests/browser-output/
+tests/browser-profile/
+tests/edge-smoke-*/
+tools/audio-downloader/downloads/
+tools/audio-downloader/test_*.py
+*.tmp
+*.log
+.DS_Store
+Thumbs.db
