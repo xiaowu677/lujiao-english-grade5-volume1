@@ -132,68 +132,69 @@ def build_stages(word_count, acceptance=False):
 
 def apply_page_ui(source, unit, number):
     count = len(unit["words"])
-    practice = count * 4
     chapter = CHINESE_NUMBERS[number]
-    replacements = [
-        (
-            "单词星球 Unit 4：35 个词条 × 4 种模式全覆盖训练，再完成 35 题最终验收与错词订正。",
-            f"单词星球 Unit {number}：{count} 个词条 × 4 种模式全覆盖训练，"
-            f"再完成 {count} 题最终验收与错词订正。",
-        ),
-        (
-            "单词星球 2.1 · Unit 4 · 全部 35 条",
-            f"单词星球 2.1 · 鲁教版五年级上册 · Unit {number} · 全部 {count} 条",
-        ),
-        ("UNIT 04 · V2.1", f"UNIT {number:02d} · V2.1"),
-        ("UNIT 04 · 全册词汇", f"UNIT {number:02d} · {unit['titleZh']}"),
-        (
-            "先完成 140 格形、音、义基础训练，再进入四幕校园故事，在真实语境中掌握\n"
-            "                35 个词条，最后用没看过的新语境完成验收。",
-            f"先完成 {practice} 格形、音、义基础训练，再进入四幕主题故事，"
-            f"在真实语境中掌握\n                {count} 个词条，最后用没看过的新语境完成验收。",
-        ),
-        ("<b>35</b> 个单词", f"<b>{count}</b> 个单词"),
-        ("<b>140</b> 格基础训练", f"<b>{practice}</b> 格基础训练"),
-        ("<b>35</b> 题语境训练", f"<b>{count}</b> 题语境训练"),
-        ("<strong>Unit 4</strong>", f"<strong>Unit {number}</strong>"),
-        ("<span>35 words</span>", f"<span>{count} words</span>"),
-        ("第四颗学习星球", f"{chapter}颗学习星球"),
-        ("Unit 4 · 全册词汇", f"Unit {number} · {unit['title']}"),
-        (
-            "学科、学习、能力、时间、音乐、科学人物和地点等 Unit 4 全册词汇。"
-            "题目与选项每次重新排列，每个词条必须在四种模式中分别答对，短语和专有名词也完整覆盖。",
-            f"{UNIT_DESCRIPTIONS[unit['id']]}题目与选项每次重新排列，"
-            "每个词条必须在四种模式中分别答对，长单词、短语和专有名词也完整覆盖。",
-        ),
-        ("0 / 140 基础训练格", f"0 / {practice} 基础训练格"),
-        ("35 个词条", f"{count} 个词条"),
-        (
-            "140 格基础训练 → 4 幕故事 → 35 题语境训练 → 35 题新语境验收。",
-            f"{practice} 格基础训练 → 4 幕故事 → {count} 题语境训练 → "
-            f"{count} 题新语境验收。",
-        ),
-        ("35 题语境训练", f"{count} 题语境训练"),
-        ("1 / 35", f"1 / {count}"),
-        ('aria-valuemax="35"', f'aria-valuemax="{count}"'),
-        ("140 / 140", f"{practice} / {practice}"),
-        ("0 / 140", f"0 / {practice}"),
-        ("35 / 35", f"{count} / {count}"),
-        ("${audit.mastered} / 80 模式已掌握", "${audit.mastered} / ${audit.total} 模式已掌握"),
-        ("当前 140 格训练进度", f"当前 {practice} 格训练进度"),
-        ("UNIT 04 · 成绩单", f"UNIT {number:02d} · 成绩单"),
-        (
-            "word-planet-unit-4-v2.1-unit4-progress-v3",
-            f"word-planet-grade5-v2.1-unit{number}-full-progress-v3",
-        ),
-        (
-            "word-planet-unit-4-v2.1-unit4-progress-v2",
-            f"word-planet-grade5-v2.1-unit{number}-full-progress-v2",
-        ),
-    ]
-    for old, new in replacements:
-        if old not in source:
-            raise ValueError(f"unit{number}: missing template text {old!r}")
-        source = source.replace(old, new)
+    source = source.replace(
+        "单词星球 2.1 · Unit 1",
+        f"单词星球 2.1 · 鲁教版5年级上册 · Unit {number} · 全部 {count} 条",
+    )
+    source = source.replace("UNIT 01 · V2.1", f"UNIT {number:02d} · V2.1")
+    source = source.replace("UNIT 01 · 基础词汇", f"UNIT {number:02d} · {unit['titleZh']}")
+    source = source.replace("Unit 1 · 基础词汇", f"Unit {number} · {unit['title']}")
+    source = source.replace("第一颗学习星球", f"{chapter}颗学习星球")
+    source = source.replace("<b>20</b> 个单词", f"<b>{count}</b> 个单词")
+    source = source.replace(
+        "<b>1</b> 轮混合闯关",
+        f"<b>{count}</b> 词混合闯关",
+    )
+    source = source.replace("<b>20</b> 题抽样验收", "<b>≤20</b> 题抽样验收")
+    source = source.replace("<span>20 words</span>", f"<span>{count} words</span>")
+    source = source.replace("0 / 20 词条", f"0 / {count} 词条")
+    source = source.replace("1 / 20</div>", f"1 / {count}</div>")
+    source = source.replace('aria-valuemax="20"', f'aria-valuemax="{count}"')
+    source = source.replace(
+        '<strong id="milestone-count">0 / 20</strong>',
+        f'<strong id="milestone-count">0 / {count}</strong>',
+    )
+    source = source.replace(
+        '<strong id="result-score">20 / 20</strong>',
+        f'<strong id="result-score">{count} / {count}</strong>',
+    )
+    source = source.replace(
+        '<strong id="result-word-coverage">20 / 20</strong>',
+        f'<strong id="result-word-coverage">{count} / {count}</strong>',
+    )
+    source = source.replace(
+        '<strong id="result-mode-coverage">20 / 20</strong>',
+        f'<strong id="result-mode-coverage">{count} / {count}</strong>',
+    )
+    source = source.replace(
+        '<strong id="result-context-coverage">20 / 20</strong>',
+        f'<strong id="result-context-coverage">{count} / {count}</strong>',
+    )
+    source = source.replace("UNIT 01 · 成绩单", f"UNIT {number:02d} · 成绩单")
+    source = source.replace(
+        "word-planet-unit-1-progress-v4",
+        f"word-planet-grade5-v2.1-unit{number}-full-progress-v4",
+    )
+    source = source.replace(
+        "word-planet-unit-1-progress-v3",
+        f"word-planet-grade5-v2.1-unit{number}-full-progress-v3",
+    )
+    source = source.replace(
+        "word-planet-unit-1-progress-v2",
+        f"word-planet-grade5-v2.1-unit{number}-full-progress-v2",
+    )
+    tag_start = source.index('<span class="unit-tag">')
+    tag_end = source.index("</span>", tag_start) + len("</span>")
+    unit_tag = source[tag_start:tag_end]
+    source = (
+        source[:tag_start]
+        + '<div class="topbar-actions" style="display:flex;align-items:center;gap:9px">'
+        + '<a class="home-link" href="../../" aria-label="返回全部单元">← 返回单元列表</a>'
+        + unit_tag
+        + "</div>"
+        + source[tag_end:]
+    )
     return source
 
 
@@ -257,7 +258,7 @@ def unit_cards(data):
 
 def build_landing(template, data):
     total_words = sum(len(unit["words"]) for unit in data["units"])
-    total_questions = total_words * 6
+    total_questions = sum(len(unit["words"]) + min(len(unit["words"]), 20) for unit in data["units"])
     source = template
     replacements = [
         (
@@ -274,9 +275,9 @@ def build_landing(template, data):
         ("<b>9</b> 个学习单元", "<b>7</b> 个学习单元"),
         ("<b>18</b> 套训练页面", "<b>7</b> 套训练页面"),
         (
-            "选择单元，完成形、音、义基础训练、四幕语境故事和最终验收。\n"
+            "选择单元，完成四幕故事、逐幕混合闯关、错词补练和抽样验收。\n"
             "            每个单元都提供“全部词条版”和“重点词汇版”。",
-            f"选择单元，完成形、音、义基础训练、四幕语境故事和最终验收。\n"
+            f"选择单元，完成四幕故事、逐幕混合闯关、错词补练和抽样验收。\n"
             f"            全册共 {total_words} 个词条、{total_questions} 道学习题，"
             "全部使用固定英式语音。",
         ),

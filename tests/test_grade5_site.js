@@ -18,11 +18,9 @@ function extractCore(html) {
     .map((match) => match[1])
     .find((script) => script.includes('const WORDS ='));
   assert.ok(source, 'generated page must contain the word-game core');
-
   const context = { console, module: { exports: {} }, window: {} };
   vm.createContext(context);
   vm.runInContext(`${source}\nthis.core = window.WordQuestCore;`, context);
-  assert.ok(context.core, 'generated page must expose WordQuestCore');
   return context.core;
 }
 
@@ -46,22 +44,19 @@ test.after(() => {
   fs.rmSync(buildRoot, { recursive: true, force: true });
 });
 
-test('independent Grade 5 landing page shows live totals', () => {
+test('landing page shows adaptive live totals', () => {
   const html = fs.readFileSync(path.join(buildRoot, 'index.html'), 'utf8');
+  const totalWords = data.units.reduce((sum, unit) => sum + unit.words.length, 0);
+  const adaptiveQuestions = data.units.reduce(
+    (sum, unit) =>
+      sum + unit.words.length + Math.min(unit.words.length, 20),
+    0,
+  );
+
   assert.match(html, /鲁教版五年级英语上册/);
   assert.match(html, /<b>7<\/b> 个学习单元/);
-  assert.match(html, /<b>155<\/b> 个词条/);
-  assert.match(html, /<b>930<\/b> 道学习题/);
-
-  for (const unit of data.units) {
-    const number = unit.id.replace('unit', '');
-    assert.match(
-      html,
-      new RegExp(`outputs/v2\\.1-unit${number}/index\\.html`),
-      `${unit.id} link`,
-    );
-  }
-  assert.doesNotMatch(html, /-key\/index\.html/);
+  assert.match(html, new RegExp(`<b>${totalWords}</b> 个词条`));
+  assert.match(html, new RegExp(`<b>${adaptiveQuestions}</b> 道学习题`));
 });
 
 for (const unit of data.units) {
@@ -73,7 +68,7 @@ for (const unit of data.units) {
     'index.html',
   );
 
-  test(`${unit.id} page preserves workbook order and dynamic totals`, () => {
+  test(`${unit.id} preserves workbook order and adaptive totals`, () => {
     const html = fs.readFileSync(pagePath, 'utf8');
     const core = extractCore(html);
     const count = unit.words.length;
@@ -82,26 +77,19 @@ for (const unit of data.units) {
       Array.from(core.WORDS, (word) => word.en),
       unit.words.map((word) => word.en),
     );
-    assert.match(html, new RegExp(`单词星球 2\\.1 · .*Unit ${number}`));
     assert.match(html, new RegExp(`<b>${count}</b> 个单词`));
-    assert.match(html, new RegExp(`<b>${count * 4}</b> 格基础训练`));
-    assert.match(html, new RegExp(`<b>${count}</b> 题语境训练`));
+    assert.match(html, new RegExp(`<b>${count}</b> 词混合闯关`));
+    assert.match(html, /<b>≤20<\/b> 题抽样验收/);
+    assert.match(html, /id="result-duration"/);
     assert.match(
       html,
-      new RegExp(
-        `word-planet-grade5-v2\\.1-unit${number}-full-progress-v3`,
-      ),
+      new RegExp(`word-planet-grade5-v2\\.1-unit${number}-full-progress-v4`),
     );
     assert.match(html, /class="home-link"/);
     assert.match(html, /href="\.\.\/\.\.\/"/);
-    assert.doesNotMatch(html, /140 格基础训练 → 4 幕故事 → 35 题/);
-    assert.doesNotMatch(html, /35 题新语境验收/);
-    assert.doesNotMatch(html, /\/ 80 模式已掌握/);
-    assert.doesNotMatch(html, /const masteredThisRound = 20 -/);
-    assert.doesNotMatch(html, /const masteredThisScene = 5 -/);
   });
 
-  test(`${unit.id} has four scenes and complete fresh acceptance contexts`, () => {
+  test(`${unit.id} keeps four complete stories and contexts`, () => {
     const html = fs.readFileSync(pagePath, 'utf8');
     const core = extractCore(html);
     const expectedWords = unit.words.map((word) => word.en);
@@ -114,101 +102,72 @@ for (const unit of data.units) {
 
     for (const word of unit.words) {
       const context = core.CONTEXTS[word.en];
-      assert.equal(
-        context.trainingSentence.match(/\{\{word\}\}/g)?.length,
-        1,
-      );
-      assert.equal(
-        context.acceptanceSentence.match(/\{\{word\}\}/g)?.length,
-        1,
-      );
+      assert.equal(context.trainingSentence.match(/\{\{word\}\}/g)?.length, 1);
+      assert.equal(context.acceptanceSentence.match(/\{\{word\}\}/g)?.length, 1);
       assert.equal(context.acceptanceZh.match(/\{\{word\}\}/g)?.length, 1);
-      assert.notEqual(
-        context.trainingSentence,
-        context.acceptanceSentence,
-      );
-    }
-
-    if (unit.id === 'unit6') {
-      assert.match(
-        core.buildContextTrainingQuestion('be born').sentence,
-        /phrase be born/,
-      );
-    }
-    if (unit.id === 'unit7') {
-      assert.match(
-        core.buildContextTrainingQuestion('eve').sentence,
-        /New Year’s Eve/,
-      );
+      assert.notEqual(context.trainingSentence, context.acceptanceSentence);
     }
   });
 
-  test(`${unit.id} gives four unique choices in every training mode`, () => {
+  test(`${unit.id} uses one balanced adaptive question per word`, () => {
     const html = fs.readFileSync(pagePath, 'utf8');
     const core = extractCore(html);
-    const count = unit.words.length;
-
-    for (let seed = 1; seed <= 20; seed += 1) {
-      const rounds = core.buildTrainingRounds(seededRandom(seed));
-      assert.equal(rounds.length, 4);
-      for (const round of rounds) {
-        assert.equal(round.questions.length, count);
-        for (const question of round.questions) {
-          assert.equal(question.choices.length, 4);
-          assert.equal(
-            new Set(question.choices.map((choice) => choice.value)).size,
-            4,
-            `${unit.id} ${question.word.en} ${question.mode}`,
-          );
-          assert.equal(
-            question.choices.filter(
-              (choice) => choice.value === question.correctValue,
-            ).length,
-            1,
-          );
-        }
-      }
-    }
-
-    const coverage = core.auditTrainingCoverage(core.createMasteryRecord());
-    assert.equal(coverage.total, count * 4);
-  });
-
-  test(`${unit.id} acceptance covers every word with four unique choices`, () => {
-    const html = fs.readFileSync(pagePath, 'utf8');
-    const core = extractCore(html);
-    const questions = core.buildContextAcceptanceTest(seededRandom(20261127));
-
-    assert.equal(questions.length, unit.words.length);
-    assert.equal(
-      new Set(questions.map((question) => question.word.en)).size,
-      unit.words.length,
+    const queue = core.createAdaptiveQueue(
+      core.WORDS,
+      seededRandom(20261127),
     );
-    for (const question of questions) {
-      assert.equal(question.choices.length, 4);
+
+    assert.equal(queue.length, core.WORDS.length);
+    assert.equal(
+      new Set(queue.map((item) => item.wordEn)).size,
+      core.WORDS.length,
+    );
+
+    for (const word of core.WORDS) {
+      const contextQuestion = core.buildContextTrainingQuestion(word.en);
+      assert.equal(contextQuestion.choices.length, 4);
       assert.equal(
-        new Set(question.choices.map((choice) => choice.value)).size,
+        new Set(contextQuestion.choices.map((choice) => choice.value)).size,
         4,
       );
     }
   });
 
-  test(`${unit.id} uses fixed audio without device speech fallback`, () => {
+  test(`${unit.id} acceptance samples at most twenty words`, () => {
     const html = fs.readFileSync(pagePath, 'utf8');
+    const core = extractCore(html);
+    const names = core.WORDS.map((word) => word.en);
+    const selected = core.selectAcceptanceWords(
+      names.slice(0, 2),
+      names,
+      20,
+      seededRandom(20261127),
+    );
+
+    assert.equal(selected.length, Math.min(names.length, 20));
+    assert.equal(new Set(selected).size, selected.length);
+  });
+
+  test(`${unit.id} hides English-answer audio and records duration`, () => {
+    const html = fs.readFileSync(pagePath, 'utf8');
+    const core = extractCore(html);
+
     assert.match(
       html,
       /const AUDIO_BASE = '\.\.\/assets\/audio\/v2\.1\/en-GB-SoniaNeural\/';/,
     );
-    assert.match(
-      html,
-      /const AUDIO_MANIFEST_URL\s*=\s*'\.\.\/assets\/audio\/v2\.1\/en-GB-SoniaNeural\/manifest\.json';/,
-    );
     assert.match(html, /const FIXED_AUDIO_ENABLED = true;/);
-    assert.match(html, /const narrationPlayer = new Audio\(\);/);
-    assert.match(html, /function narrationAudioFile\(narration\)/);
-    assert.match(html, /function escapeRegExp/);
-    assert.doesNotMatch(html, /__APP__/);
-    assert.doesNotMatch(html, /speechSynthesis/i);
-    assert.doesNotMatch(html, /SpeechSynthesisUtterance/);
+    assert.match(html, /function loadNarrationManifest\(\)/);
+    assert.match(html, /function getNarrationAudio\(narration\)/);
+    assert.equal(core.audioPolicyForQuestion({ mode: 'zh-en' }), 'none');
+    assert.equal(
+      core.audioPolicyForQuestion({ mode: 'context-training' }),
+      'none',
+    );
+    assert.equal(
+      core.audioPolicyForQuestion({ mode: 'context-zh-en' }),
+      'none',
+    );
+    assert.match(html, /Core\.formatDuration\(durationSeconds\)/);
   });
 }

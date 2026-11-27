@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="单词星球 Unit 4：35 个词条 × 4 种模式全覆盖训练，再完成 35 题最终验收与错词订正。"
+      content="单词星球 Unit 1：混合闯关、四幕语境与错词优先的抽样验收，生成含正确率和用时的成绩单。"
     />
     <meta name="theme-color" content="#08132f" />
     <meta name="author" content="Mr.Peng" />
     <meta name="copyright" content="© Mr.Peng 2026" />
-    <title>单词星球 2.1 · Unit 4 · 全部 35 条</title>
+    <title>单词星球 3.0 · Unit 1</title>
     <style>
       :root {
         color-scheme: dark;
@@ -2114,44 +2114,6 @@
           transition-duration: 0.01ms !important;
         }
       }
-.topbar-actions {
-        display: flex;
-        align-items: center;
-        gap: 9px;
-      }
-
-      .home-link {
-        display: inline-flex;
-        min-height: 30px;
-        align-items: center;
-        padding: 0 12px;
-        border: 1px solid var(--line);
-        border-radius: 999px;
-        color: #c7d7ff;
-        background: rgba(12, 26, 61, 0.6);
-        font-size: 10px;
-        font-weight: 800;
-        text-decoration: none;
-        transition:
-          border-color 0.16s ease,
-          color 0.16s ease;
-      }
-
-      .home-link:hover {
-        border-color: rgba(97, 217, 255, 0.42);
-        color: #effaff;
-      }
-
-      @media (max-width: 560px) {
-        .topbar .unit-tag {
-          display: none;
-        }
-
-        .home-link {
-          padding: 0 10px;
-          font-size: 9px;
-        }
-      }
     </style>
   </head>
   <body>
@@ -2161,31 +2123,28 @@
           <span class="brand-mark" aria-hidden="true">✦</span>
           <span class="brand-copy">单词星球<small>WORD QUEST</small></span>
         </div>
-        <div class="topbar-actions">
-          <a class="home-link" href="../../" aria-label="返回全部单元">← 返回单元列表</a>
-          <span class="unit-tag">UNIT 04 · V2.1</span>
-        </div>
+        <span class="unit-tag">UNIT 01 · V3.0</span>
       </header>
 
       <main>
         <section class="screen" id="home-screen">
           <div class="home-hero">
             <div class="hero-copy">
-              <p class="eyebrow">UNIT 04 · 全册词汇</p>
+              <p class="eyebrow">UNIT 01 · 基础词汇</p>
               <h1>点亮你的<br /><span class="accent">单词星球</span></h1>
               <p class="hero-lead">
-                先完成 140 格形、音、义基础训练，再进入四幕校园故事，在真实语境中掌握
-                35 个词条，最后用没看过的新语境完成验收。
+                四幕故事分批闯关，每个词先做一道混合题；答错再补练，最后优先验收
+                错词并从已学词中随机抽查，完成约 10–15 分钟的学习闭环。
               </p>
               <div class="fact-row" aria-label="本单元信息">
-                <span class="fact"><b>35</b> 个单词</span>
-                <span class="fact"><b>140</b> 格基础训练</span>
-                <span class="fact"><b>35</b> 题语境训练</span>
+                <span class="fact"><b>20</b> 个单词</span>
+                <span class="fact"><b>1</b> 轮混合闯关</span>
+                <span class="fact"><b>20</b> 题抽样验收</span>
                 <span class="fact"><b>90%</b> 验收</span>
               </div>
               <div class="hero-actions">
                 <button class="primary-button" type="button" data-action="start" id="start-button">
-                  开始全覆盖训练 <span class="button-arrow" aria-hidden="true">→</span>
+                  开始混合闯关 <span class="button-arrow" aria-hidden="true">→</span>
                 </button>
                 <button
                   class="secondary-button"
@@ -2201,7 +2160,7 @@
                 </button>
               </div>
               <p class="hero-hint">
-                答对自动进入下一题，答错后点击继续。训练进度会自动保存，可以分多次完成。
+                答对自动进入下一题，答错后点击继续。每幕结束都会保存进度，可以分多次完成。
               </p>
             </div>
 
@@ -2213,8 +2172,8 @@
                 <div class="orbit"></div>
                 <div class="planet-label">
                   <small>MISSION</small>
-                  <strong>Unit 4</strong>
-                  <span>35 words</span>
+                  <strong>Unit 1</strong>
+                  <span>20 words</span>
                 </div>
               </div>
             </div>
@@ -2223,34 +2182,34 @@
           <div class="home-grid">
             <section class="panel unit-panel" id="unit-card">
               <div>
-                <div class="unit-kicker"><span aria-hidden="true">◈</span> 第四颗学习星球</div>
-                <h2>Unit 4 · 全册词汇</h2>
+                <div class="unit-kicker"><span aria-hidden="true">◈</span> 第一颗学习星球</div>
+                <h2>Unit 1 · 基础词汇</h2>
                 <p>
-                  学科、学习、能力、时间、音乐、科学人物和地点等 Unit 4 全册词汇。题目与选项每次重新排列，每个词条必须在四种模式中分别答对，短语和专有名词也完整覆盖。
+                  水果、饮品、动物、颜色和校园词汇。题目与选项每次重新排列，
+                  每个单词先完成一道混合题，错词会在本幕末尾补练。
                 </p>
               </div>
               <div class="unit-status" id="unit-status">
                 <span class="status-star" aria-hidden="true">☆</span>
                 <strong id="unit-status-title">等待启程</strong>
-                <small id="unit-status-detail">0 / 140 基础训练格</small>
+                <small id="unit-status-detail">0 / 20 词条</small>
               </div>
             </section>
 
             <section class="panel mission-panel" id="rules">
               <h3>本次星际任务</h3>
               <ol class="mission-list">
-                <li><span class="mission-number">01</span><span>英译中：看英文并听发音，全部选中文。</span></li>
-                <li><span class="mission-number">02</span><span>听音辨义：35 个词条全部听音选中文。</span></li>
-                <li><span class="mission-number">03</span><span>听音选词：35 个词条全部听音选英文。</span></li>
-                <li><span class="mission-number">04</span><span>中译英：35 个词条全部看中文选英文。</span></li>
-                <li><span class="mission-number">语境</span><span>四幕故事 + 35 题语境训练，最终使用全新句子验收。</span></li>
+                <li><span class="mission-number">01</span><span>读一幕故事，在完整语境中先认识本幕词条。</span></li>
+                <li><span class="mission-number">02</span><span>每个词一道混合题，覆盖看词、听音、选词和语境理解。</span></li>
+                <li><span class="mission-number">03</span><span>答错先同题型重试，再用英译中辅助，之后进入验收重点。</span></li>
+                <li><span class="mission-number">04</span><span>新语境优先考错词，再从其余词中随机抽查，最多 20 题。</span></li>
               </ol>
             </section>
           </div>
 
           <div class="coming-soon">
-            <strong>2.1 语境学习版 · 固定英式语音</strong>
-            <span>140 格基础训练 → 4 幕故事 → 35 题语境训练 → 35 题新语境验收。</span>
+            <strong>3.0 自适应语境学习版 · 固定统一语音</strong>
+            <span>4 幕故事 → 每词 1 道混合题 → 错词补练 → 最多 20 题新语境验收。</span>
           </div>
         </section>
 
@@ -2281,7 +2240,7 @@
                   🔊 再听一遍
                 </button>
                 <button class="primary-button" type="button" data-action="start-context-quiz">
-                  进入本幕语境题 <span aria-hidden="true">→</span>
+                  开始本幕混合闯关 <span aria-hidden="true">→</span>
                 </button>
               </div>
             </article>
@@ -2292,10 +2251,10 @@
           <div class="testing-wrap">
             <div class="test-head">
               <div>
-                <p class="eyebrow" id="stage-eyebrow">第 1 关 · 听音辨义</p>
-                <h2 class="test-title" id="test-title">全覆盖训练</h2>
+                <p class="eyebrow" id="stage-eyebrow">第 1 幕 · 混合闯关</p>
+                <h2 class="test-title" id="test-title">混合闯关训练</h2>
               </div>
-              <div class="question-count" id="question-count">1 / 35</div>
+              <div class="question-count" id="question-count">1 / 20</div>
             </div>
 
             <div
@@ -2303,14 +2262,14 @@
               role="progressbar"
               aria-label="测试进度"
               aria-valuemin="0"
-              aria-valuemax="35"
+              aria-valuemax="20"
               aria-valuenow="0"
               id="progress-track"
             >
               <div class="progress-fill" id="progress-fill"></div>
             </div>
 
-            <div class="stage-rail" id="stage-rail" aria-label="四个测试阶段"></div>
+            <div class="stage-rail" id="stage-rail" aria-label="四幕学习进度"></div>
 
             <section class="question-card" aria-labelledby="question-instruction">
               <p class="question-instruction" id="question-instruction"></p>
@@ -2330,20 +2289,20 @@
           <div class="milestone-shell">
             <article class="milestone-card">
               <div class="milestone-stars" aria-hidden="true">✦ ✦ ✦</div>
-              <p class="eyebrow" id="milestone-eyebrow">TRAINING CHECKPOINT</p>
-              <h2 id="milestone-title">第 1 关完成</h2>
+              <p class="eyebrow" id="milestone-eyebrow">SCENE CHECKPOINT</p>
+              <h2 id="milestone-title">第 1 幕完成</h2>
               <p class="milestone-message" id="milestone-message"></p>
               <div class="milestone-meter">
-                <span id="milestone-label">已掌握训练格</span>
-                <strong id="milestone-count">0 / 140</strong>
+                <span id="milestone-label">已通过词条</span>
+                <strong id="milestone-count">0 / 20</strong>
               </div>
               <button
                 class="primary-button"
                 type="button"
-                data-action="continue-training"
+                data-action="continue-context"
                 id="milestone-button"
               >
-                进入下一关 <span class="button-arrow" aria-hidden="true">→</span>
+                进入下一幕 <span class="button-arrow" aria-hidden="true">→</span>
               </button>
             </article>
           </div>
@@ -2353,7 +2312,7 @@
           <div class="result-shell">
             <article class="result-card" aria-labelledby="result-title">
               <div class="result-topline">
-                <span>UNIT 04 · 成绩单</span>
+                <span>UNIT 01 · 成绩单</span>
                 <span class="session-code" id="session-code">WQ-000000</span>
               </div>
 
@@ -2377,27 +2336,31 @@
                 <div class="result-stats">
                   <div class="result-stat">
                     <span>答对题数</span>
-                    <strong id="result-score">35 / 35</strong>
+                    <strong id="result-score">20 / 20</strong>
                   </div>
                   <div class="result-stat">
                     <span>单词覆盖</span>
-                    <strong id="result-word-coverage">35 / 35</strong>
+                    <strong id="result-word-coverage">20 / 20</strong>
                   </div>
                   <div class="result-stat">
-                    <span>模式覆盖</span>
-                    <strong id="result-mode-coverage">140 / 140</strong>
+                    <span>闯关通过</span>
+                    <strong id="result-mode-coverage">20 / 20</strong>
                   </div>
                   <div class="result-stat">
                     <span>错词订正</span>
                     <strong id="result-corrections">2 / 2</strong>
                   </div>
                   <div class="result-stat">
-                    <span>语境覆盖</span>
-                    <strong id="result-context-coverage">35 / 35</strong>
+                    <span>验收抽查</span>
+                    <strong id="result-context-coverage">20 / 20</strong>
                   </div>
                   <div class="result-stat">
                     <span>完成时间</span>
                     <strong id="result-date">2026.11.26</strong>
+                  </div>
+                  <div class="result-stat">
+                    <span>本次用时</span>
+                    <strong id="result-duration">00:00</strong>
                   </div>
                 </div>
               </div>
@@ -2437,7 +2400,7 @@
       </main>
 
       <footer class="footer">
-        © Mr.Peng 2026 · 单词星球 2.1 · 学习记录保存在当前浏览器
+        © Mr.Peng 2026 · 单词星球 3.0 · 学习记录保存在当前浏览器
       </footer>
     </div>
 
@@ -2451,7 +2414,7 @@
         <div class="dialog-icon" aria-hidden="true">↻</div>
         <h2 id="reset-dialog-title">重新完整训练？</h2>
         <p id="reset-dialog-message">
-          当前 140 格训练进度和本次验收记录会被清空，需要从第一关重新开始。已经获得的最佳通关成绩会保留。
+          当前 80 格训练进度和本次验收记录会被清空，需要从第一关重新开始。已经获得的最佳通关成绩会保留。
         </p>
         <div class="dialog-actions">
           <button class="secondary-button" type="button" data-action="cancel-reset">
@@ -2479,713 +2442,274 @@
 
     <script>
       const WORDS = [
-  {
-    "en": "biology",
-    "zh": "生物学",
-    "ipa": "/baɪˈɒlədʒi/",
-    "pos": "n.",
-    "group": "subjects"
-  },
-  {
-    "en": "IT",
-    "zh": "信息技术",
-    "ipa": "/ˌaɪ ˈtiː/",
-    "pos": "n.",
-    "group": "subjects"
-  },
-  {
-    "en": "geography",
-    "zh": "地理",
-    "ipa": "/dʒiˈɒɡrəfi/",
-    "pos": "n.",
-    "group": "subjects"
-  },
-  {
-    "en": "history",
-    "zh": "历史",
-    "ipa": "/ˈhɪstri/",
-    "pos": "n.",
-    "group": "subjects"
-  },
-  {
-    "en": "boring",
-    "zh": "乏味的",
-    "ipa": "/ˈbɔːrɪŋ/",
-    "pos": "adj.",
-    "group": "adjectives"
-  },
-  {
-    "en": "useful",
-    "zh": "有用的",
-    "ipa": "/ˈjuːsfl/",
-    "pos": "adj.",
-    "group": "adjectives"
-  },
-  {
-    "en": "exciting",
-    "zh": "令人激动的",
-    "ipa": "/ɪkˈsaɪtɪŋ/",
-    "pos": "adj.",
-    "group": "adjectives"
-  },
-  {
-    "en": "past",
-    "zh": "过去",
-    "ipa": "/pɑːst/",
-    "pos": "n. & adj.",
-    "group": "learning"
-  },
-  {
-    "en": "good with",
-    "zh": "善于应付",
-    "ipa": "-",
-    "pos": "短语",
-    "group": "skills"
-  },
-  {
-    "en": "number",
-    "zh": "数字",
-    "ipa": "/ˈnʌmbə(r)/",
-    "pos": "n.",
-    "group": "learning"
-  },
-  {
-    "en": "help sb with",
-    "zh": "帮助某人做",
-    "ipa": "-",
-    "pos": "短语",
-    "group": "skills"
-  },
-  {
-    "en": "reason",
-    "zh": "原因",
-    "ipa": "/ˈriːzn/",
-    "pos": "n.",
-    "group": "learning"
-  },
-  {
-    "en": "listen to",
-    "zh": "倾听",
-    "ipa": "-",
-    "pos": "短语",
-    "group": "skills"
-  },
-  {
-    "en": "good at",
-    "zh": "擅长",
-    "ipa": "-",
-    "pos": "短语",
-    "group": "skills"
-  },
-  {
-    "en": "remember",
-    "zh": "记住",
-    "ipa": "/rɪˈmembə(r)/",
-    "pos": "v.",
-    "group": "learning"
-  },
-  {
-    "en": "as",
-    "zh": "如同；作为",
-    "ipa": "/æz; əz/",
-    "pos": "prep. & conj.",
-    "group": "learning"
-  },
-  {
-    "en": "AM",
-    "zh": "上午",
-    "ipa": "-",
-    "pos": "缩写",
-    "group": "time"
-  },
-  {
-    "en": "PM",
-    "zh": "下午",
-    "ipa": "-",
-    "pos": "缩写",
-    "group": "time"
-  },
-  {
-    "en": "French",
-    "zh": "法语",
-    "ipa": "/frentʃ/",
-    "pos": "n. & adj.",
-    "group": "arts"
-  },
-  {
-    "en": "excellent",
-    "zh": "优秀的",
-    "ipa": "/ˈeksələnt/",
-    "pos": "adj.",
-    "group": "adjectives"
-  },
-  {
-    "en": "instrument",
-    "zh": "乐器",
-    "ipa": "/ˈɪnstrəmənt/",
-    "pos": "n.",
-    "group": "arts"
-  },
-  {
-    "en": "singer",
-    "zh": "歌手",
-    "ipa": "/ˈsɪŋə(r)/",
-    "pos": "n.",
-    "group": "arts"
-  },
-  {
-    "en": "future",
-    "zh": "未来",
-    "ipa": "/ˈfjuːtʃə(r)/",
-    "pos": "n.",
-    "group": "time"
-  },
-  {
-    "en": "in the future",
-    "zh": "将来",
-    "ipa": "-",
-    "pos": "短语",
-    "group": "time"
-  },
-  {
-    "en": "term",
-    "zh": "学期",
-    "ipa": "/tɜːm/",
-    "pos": "n.",
-    "group": "learning"
-  },
-  {
-    "en": "work out",
-    "zh": "计算出",
-    "ipa": "-",
-    "pos": "短语",
-    "group": "learning"
-  },
-  {
-    "en": "problem",
-    "zh": "难题",
-    "ipa": "/ˈprɒbləm/",
-    "pos": "n.",
-    "group": "learning"
-  },
-  {
-    "en": "in class",
-    "zh": "课堂上",
-    "ipa": "-",
-    "pos": "短语",
-    "group": "learning"
-  },
-  {
-    "en": "magic",
-    "zh": "魔法",
-    "ipa": "/ˈmædʒɪk/",
-    "pos": "n. & adj.",
-    "group": "learning"
-  },
-  {
-    "en": "life",
-    "zh": "生活",
-    "ipa": "/laɪf/",
-    "pos": "n.",
-    "group": "learning"
-  },
-  {
-    "en": "scientist",
-    "zh": "科学家",
-    "ipa": "/ˈsaɪəntɪst/",
-    "pos": "n.",
-    "group": "learning"
-  },
-  {
-    "en": "Baker",
-    "zh": "贝克",
-    "ipa": "/ˈbeɪkə(r)/",
-    "pos": "专有名词",
-    "group": "people"
-  },
-  {
-    "en": "Mike",
-    "zh": "迈克",
-    "ipa": "/maɪk/",
-    "pos": "专有名词",
-    "group": "people"
-  },
-  {
-    "en": "Davis",
-    "zh": "戴维斯",
-    "ipa": "/ˈdeɪvɪs/",
-    "pos": "专有名词",
-    "group": "people"
-  },
-  {
-    "en": "Canada",
-    "zh": "加拿大",
-    "ipa": "/ˈkænədə/",
-    "pos": "专有名词",
-    "group": "places"
-  }
+  { en: 'apple', zh: '苹果', group: 'fruit' },
+  { en: 'banana', zh: '香蕉', group: 'fruit' },
+  { en: 'orange', zh: '橙子', group: 'fruit' },
+  { en: 'grape', zh: '葡萄', group: 'fruit' },
+  { en: 'milk', zh: '牛奶', group: 'drink' },
+  { en: 'bread', zh: '面包', group: 'drink' },
+  { en: 'water', zh: '水', group: 'drink' },
+  { en: 'juice', zh: '果汁', group: 'drink' },
+  { en: 'cat', zh: '猫', group: 'animal' },
+  { en: 'dog', zh: '狗', group: 'animal' },
+  { en: 'bird', zh: '鸟', group: 'animal' },
+  { en: 'fish', zh: '鱼', group: 'animal' },
+  { en: 'red', zh: '红色', group: 'color' },
+  { en: 'blue', zh: '蓝色', group: 'color' },
+  { en: 'green', zh: '绿色', group: 'color' },
+  { en: 'yellow', zh: '黄色', group: 'color' },
+  { en: 'book', zh: '书', group: 'school' },
+  { en: 'pencil', zh: '铅笔', group: 'school' },
+  { en: 'school', zh: '学校', group: 'school' },
+  { en: 'friend', zh: '朋友', group: 'school' },
 ];
 
 const CONTEXT_SCENES = [
   {
-    "id": 1,
-    "title": "新学期课程",
-    "subtitle": "A busy day of new subjects",
-    "wordEns": [
-      "biology",
-      "IT",
-      "geography",
-      "history",
-      "boring",
-      "useful",
-      "exciting",
-      "past",
-      "good with"
-    ],
-    "story": "At the start of the new term, Mia has biology, IT, geography and history. She finds boring lessons difficult, but she thinks science is useful and exciting. In the past, she did not like school; now she is good with new ideas.",
-    "storyZh": "新学期开始时，米娅要上生物、信息技术、地理和历史课。她觉得乏味的课很难，但她认为科学既有用又令人激动。过去她不喜欢学校，现在她很善于接受新想法。"
+    id: 1,
+    title: '早餐桌',
+    subtitle: 'Mia gets ready for the day',
+    wordEns: ['apple', 'banana', 'orange', 'milk', 'bread'],
+    story:
+      'In the morning, Mia puts an apple, a banana and an orange on the table. She eats some bread and drinks a glass of milk.',
+    storyZh:
+      '早晨，米娅把苹果、香蕉和橙子放在桌上。她吃了一些面包，喝了一杯牛奶。',
   },
   {
-    "id": 2,
-    "title": "学习小宇宙",
-    "subtitle": "Questions, answers and practice",
-    "wordEns": [
-      "number",
-      "help sb with",
-      "reason",
-      "listen to",
-      "good at",
-      "remember",
-      "as",
-      "AM",
-      "PM"
-    ],
-    "story": "Mia writes down a number and asks the teacher for a reason. The phrase help sb with means to help someone do something. She will listen to every question and is good at solving puzzles. She must remember the rule as she works from AM to PM.",
-    "storyZh": "米娅写下一个数字，并请老师说明原因。短语 help sb with 表示帮助某人做某事。她会倾听每一个问题，也很擅长解谜。从上午到下午，她都必须记住这条规则。"
+    id: 2,
+    title: '准备出发',
+    subtitle: 'Pack the school bag',
+    wordEns: ['grape', 'juice', 'water', 'red', 'blue'],
+    story:
+      'Mia puts a purple grape in her lunch box. She takes some fruit juice and a bottle of water. Her school bag is red and her shoes are blue.',
+    storyZh:
+      '米娅把一颗紫葡萄放进午餐盒。她带上果汁和一瓶水。她的书包是红色的，鞋子是蓝色的。',
   },
   {
-    "id": 3,
-    "title": "未来的舞台",
-    "subtitle": "Music, French and big dreams",
-    "wordEns": [
-      "French",
-      "excellent",
-      "instrument",
-      "singer",
-      "future",
-      "in the future",
-      "term",
-      "work out",
-      "problem"
-    ],
-    "story": "Mia learns French after school. She thinks the singer and the instrument sound excellent. In the future, she hopes to be a singer. This term she will work out every problem with practice.",
-    "storyZh": "米娅放学后学习法语。她觉得歌手和乐器的声音都很优秀。将来，她希望成为歌手。这个学期，她会通过练习计算出每一道难题。"
+    id: 3,
+    title: '学校时光',
+    subtitle: 'Read, write and draw',
+    wordEns: ['green', 'yellow', 'book', 'pencil', 'school'],
+    story:
+      'At school, Mia opens her green book. She writes with a yellow pencil and draws a bird.',
+    storyZh:
+      '在学校，米娅打开绿色的书。她用黄色铅笔写字，还画了一只鸟。',
   },
   {
-    "id": 4,
-    "title": "科学魔法课",
-    "subtitle": "A surprising class with friends",
-    "wordEns": [
-      "in class",
-      "magic",
-      "life",
-      "scientist",
-      "Baker",
-      "Mike",
-      "Davis",
-      "Canada"
-    ],
-    "story": "in class, Mia watches a scientist do a magic trick about life. Baker, Mike and Davis are amazed. Canada is far away, but science brings the class together.",
-    "storyZh": "课堂上，米娅看一位科学家表演关于生命的魔术。贝克、迈克和戴维斯都很惊讶。加拿大虽然很远，但科学让全班走到了一起。"
-  }
+    id: 4,
+    title: '放学以后',
+    subtitle: 'A walk home in the park',
+    wordEns: ['friend', 'cat', 'dog', 'bird', 'fish'],
+    story:
+      'After school, Mia walks home with her friend. They see a cat and a dog. A bird sings in the tree, and three fish swim in the pond.',
+    storyZh:
+      '放学后，米娅和朋友一起走路回家。她们看见一只猫和一只狗。一只鸟在树上唱歌，三条鱼在池塘里游泳。',
+  },
 ];
 
 const CONTEXTS = {
-  "biology": {
-    "sceneId": 1,
-    "trainingSentence": "Mr. Li teaches {{word}} in the science lab.",
-    "trainingZh": "李老师在科学实验室教生物学。",
-    "acceptanceSentence": "We learn about plants and animals in {{word}}.",
-    "acceptanceZh": "我们在{{word}}课上学习植物和动物。"
+  apple: {
+    sceneId: 1,
+    trainingSentence: 'At breakfast, Mia puts a red {{word}} on her plate.',
+    trainingZh: '早餐时，米娅把一个红苹果放在盘子里。',
+    acceptanceSentence: 'Tom picks a red fruit from the tree. It is an {{word}}.',
+    acceptanceZh: '汤姆从树上摘下一个红色的水果。它是一个{{word}}。',
   },
-  "IT": {
-    "sceneId": 1,
-    "trainingSentence": "In {{word}} class, Mia learns to use a computer.",
-    "trainingZh": "在信息技术课上，米娅学习使用电脑。",
-    "acceptanceSentence": "Tom uses a computer to make a poster in {{word}}.",
-    "acceptanceZh": "汤姆在{{word}}课上用电脑制作海报。"
+  banana: {
+    sceneId: 1,
+    trainingSentence: 'Mia also eats a long yellow {{word}}.',
+    trainingZh: '米娅还吃了一根长长的黄香蕉。',
+    acceptanceSentence: 'Lily peels a long yellow fruit. She eats a {{word}}.',
+    acceptanceZh: '莉莉剥开一个长长的黄色水果。她吃了一根{{word}}。',
   },
-  "geography": {
-    "sceneId": 1,
-    "trainingSentence": "We look at a world map in {{word}} class.",
-    "trainingZh": "我们在地理课上看世界地图。",
-    "acceptanceSentence": "Mr. Brown shows us mountains and rivers in {{word}}.",
-    "acceptanceZh": "布朗老师在{{word}}课上给我们看山脉和河流。"
+  orange: {
+    sceneId: 1,
+    trainingSentence: 'She cuts a round {{word}} into four pieces.',
+    trainingZh: '她把一个圆圆的橙子切成四块。',
+    acceptanceSentence: 'This round fruit is full of juice. Mia uses an {{word}}.',
+    acceptanceZh: '这个圆圆的水果有很多汁。米娅用一个{{word}}。',
   },
-  "history": {
-    "sceneId": 1,
-    "trainingSentence": "We learn about people in the {{word}} lesson.",
-    "trainingZh": "我们在历史课了解过去的人们。",
-    "acceptanceSentence": "Old photos help Mia understand {{word}}.",
-    "acceptanceZh": "老照片帮助米娅了解{{word}}。"
+  milk: {
+    sceneId: 1,
+    trainingSentence: 'Mia drinks a glass of white {{word}}.',
+    trainingZh: '米娅喝了一杯白色的牛奶。',
+    acceptanceSentence: 'Mia drinks a glass of white {{word}} with breakfast.',
+    acceptanceZh: '米娅早餐时喝了一杯白色的{{word}}。',
   },
-  "boring": {
-    "sceneId": 1,
-    "trainingSentence": "History is not {{word}} when we play a game.",
-    "trainingZh": "当我们玩游戏时，历史课并不乏味。",
-    "acceptanceSentence": "The long film has no action, so it is {{word}}.",
-    "acceptanceZh": "这部长电影没有动作情节，所以很{{word}}。"
+  bread: {
+    sceneId: 1,
+    trainingSentence: 'There is a piece of {{word}} on her plate.',
+    trainingZh: '她的盘子里有一片面包。',
+    acceptanceSentence: 'Tom is hungry. He eats a piece of {{word}} with his egg.',
+    acceptanceZh: '汤姆饿了。他吃了一片{{word}}和一个鸡蛋。',
   },
-  "useful": {
-    "sceneId": 1,
-    "trainingSentence": "The dictionary is {{word}} for learning new words.",
-    "trainingZh": "词典对学习新单词很有用。",
-    "acceptanceSentence": "This app helps Mia with her homework. It is {{word}}.",
-    "acceptanceZh": "这个应用帮助米娅完成作业，它很{{word}}。"
+  grape: {
+    sceneId: 2,
+    trainingSentence: 'Mia puts a purple {{word}} in her lunch box.',
+    trainingZh: '米娅把一颗紫葡萄放进午餐盒。',
+    acceptanceSentence: 'Many small purple fruits grow in one bunch. Tom eats a {{word}}.',
+    acceptanceZh: '许多小小的紫色水果长在一串上。汤姆吃了一颗{{word}}。',
   },
-  "exciting": {
-    "sceneId": 1,
-    "trainingSentence": "The basketball game is very {{word}}.",
-    "trainingZh": "这场篮球赛非常令人激动。",
-    "acceptanceSentence": "A trip to the science museum is {{word}}.",
-    "acceptanceZh": "去科学博物馆的旅行很{{word}}。"
+  juice: {
+    sceneId: 2,
+    trainingSentence: 'She takes some fruit {{word}} to school.',
+    trainingZh: '她带了一些果汁去学校。',
+    acceptanceSentence: 'The sweet drink is made from apples. It is apple {{word}}.',
+    acceptanceZh: '这种甜饮料是用苹果做的。它是苹果{{word}}。',
   },
-  "past": {
-    "sceneId": 1,
-    "trainingSentence": "We talk about life in the {{word}}.",
-    "trainingZh": "我们谈论过去的生活。",
-    "acceptanceSentence": "Old photos show the {{word}}.",
-    "acceptanceZh": "老照片展现了{{word}}。"
+  water: {
+    sceneId: 2,
+    trainingSentence: 'She also takes a bottle of {{word}}.',
+    trainingZh: '她还带了一瓶水。',
+    acceptanceSentence: 'After running, Lily is very thirsty. She drinks some {{word}}.',
+    acceptanceZh: '跑步后，莉莉很渴。她喝了一些{{word}}。',
   },
-  "good with": {
-    "sceneId": 1,
-    "trainingSentence": "Mia is {{word}} numbers and finishes the puzzle quickly.",
-    "trainingZh": "米娅善于应付数字，很快就完成了拼图。",
-    "acceptanceSentence": "Tom is {{word}} small children and reads to them.",
-    "acceptanceZh": "汤姆{{word}}小朋友，会读书给他们听。"
+  red: {
+    sceneId: 2,
+    trainingSentence: "Mia's school bag is {{word}}, like an apple.",
+    trainingZh: '米娅的书包是红色的，像苹果一样。',
+    acceptanceSentence: "Lily's bag is the color of an apple. The bag is {{word}}.",
+    acceptanceZh: '莉莉的书包是苹果的颜色。这个书包是{{word}}的。',
   },
-  "number": {
-    "sceneId": 2,
-    "trainingSentence": "Write the answer as a {{word}}.",
-    "trainingZh": "把答案写成一个数字。",
-    "acceptanceSentence": "Seven is my favourite {{word}}.",
-    "acceptanceZh": "七是我最喜欢的{{word}}。"
+  blue: {
+    sceneId: 2,
+    trainingSentence: 'Her school shoes are {{word}}, like the sky.',
+    trainingZh: '她的校鞋是蓝色的，像天空一样。',
+    acceptanceSentence: 'Tom looks at the sky on a sunny day. The sky is {{word}}.',
+    acceptanceZh: '汤姆在晴天看着天空。天空是{{word}}的。',
   },
-  "help sb with": {
-    "sceneId": 2,
-    "trainingSentence": "We use the phrase {{word}} when one person helps another do something.",
-    "trainingZh": "当一个人帮助另一个人做某事时，我们会用到短语“帮助某人做”。",
-    "acceptanceSentence": "The phrase for helping somebody do something is {{word}}.",
-    "acceptanceZh": "表示帮助某人做某事的短语是{{word}}。"
+  green: {
+    sceneId: 3,
+    trainingSentence: 'Mia finds a {{word}} pencil case in her bag.',
+    trainingZh: '米娅在书包里找到一个绿色的铅笔盒。',
+    acceptanceSentence: 'The leaves in the park are the color of grass. They are {{word}}.',
+    acceptanceZh: '公园里的树叶和草是同一种颜色。它们是{{word}}的。',
   },
-  "reason": {
-    "sceneId": 2,
-    "trainingSentence": "Mia gives a good {{word}} for being late.",
-    "trainingZh": "米娅为迟到给出了一个很好的理由。",
-    "acceptanceSentence": "There is a good {{word}} to read every day.",
-    "acceptanceZh": "每天阅读有一个很好的{{word}}。"
+  yellow: {
+    sceneId: 3,
+    trainingSentence: 'She writes with a {{word}} pencil.',
+    trainingZh: '她用黄色铅笔写字。',
+    acceptanceSentence: 'The sun looks like a big {{word}} ball.',
+    acceptanceZh: '太阳看起来像一个{{word}}的大球。',
   },
-  "listen to": {
-    "sceneId": 2,
-    "trainingSentence": "We {{word}} the teacher in class.",
-    "trainingZh": "我们在课堂上倾听老师讲话。",
-    "acceptanceSentence": "At bedtime, the children {{word}} a story.",
-    "acceptanceZh": "睡前，孩子们会{{word}}故事。"
+  book: {
+    sceneId: 3,
+    trainingSentence: 'Mia opens her English {{word}}.',
+    trainingZh: '米娅打开她的英语书。',
+    acceptanceSentence: 'Mia opens her {{word}} and reads a story.',
+    acceptanceZh: '米娅打开她的{{word}}，读一个故事。',
   },
-  "good at": {
-    "sceneId": 2,
-    "trainingSentence": "Lily is {{word}} art.",
-    "trainingZh": "莉莉擅长美术。",
-    "acceptanceSentence": "Mia is {{word}} solving maths problems.",
-    "acceptanceZh": "米娅{{word}}解决数学难题。"
+  pencil: {
+    sceneId: 3,
+    trainingSentence: 'Mia draws a bird with her {{word}}.',
+    trainingZh: '米娅用铅笔画出一个小鸟。',
+    acceptanceSentence: 'Tom draws a cat with a {{word}}.',
+    acceptanceZh: '汤姆用{{word}}画一只猫。',
   },
-  "remember": {
-    "sceneId": 2,
-    "trainingSentence": "I {{word}} to bring my book.",
-    "trainingZh": "我记得带上我的书。",
-    "acceptanceSentence": "Can you {{word}} his name?",
-    "acceptanceZh": "你能{{word}}他的名字吗？"
+  school: {
+    sceneId: 3,
+    trainingSentence: 'Mia meets her teacher at {{word}}.',
+    trainingZh: '米娅在学校见到老师。',
+    acceptanceSentence: 'Lily meets her teacher and friends at {{word}} every morning.',
+    acceptanceZh: '莉莉每天早上在{{word}}见到老师和朋友。',
   },
-  "as": {
-    "sceneId": 2,
-    "trainingSentence": "Mia uses a pencil {{word}} a tool.",
-    "trainingZh": "米娅把铅笔当作工具使用。",
-    "acceptanceSentence": "People see the Great Wall {{word}} a symbol of China.",
-    "acceptanceZh": "人们把长城{{word}}中国的象征。"
+  friend: {
+    sceneId: 4,
+    trainingSentence: 'Mia walks home with her best {{word}}, Lily.',
+    trainingZh: '米娅和她最好的朋友莉莉一起走路回家。',
+    acceptanceSentence: 'Tom and Mia play together every day. Mia is Tom\'s {{word}}.',
+    acceptanceZh: '汤姆和米娅每天一起玩。米娅是汤姆的{{word}}。',
   },
-  "AM": {
-    "sceneId": 2,
-    "trainingSentence": "The class starts at nine in the {{word}}.",
-    "trainingZh": "课程在上午九点开始。",
-    "acceptanceSentence": "The sun rises in the {{word}}.",
-    "acceptanceZh": "太阳在{{word}}升起。"
+  cat: {
+    sceneId: 4,
+    trainingSentence: 'A small {{word}} sleeps under the tree.',
+    trainingZh: '一只小猫在树下睡觉。',
+    acceptanceSentence: "The small animal says 'meow' and sits on the sofa. It is a {{word}}.",
+    acceptanceZh: '这只小动物会喵喵叫，坐在沙发上。它是一只{{word}}。',
   },
-  "PM": {
-    "sceneId": 2,
-    "trainingSentence": "The football game begins at four in the {{word}}.",
-    "trainingZh": "足球赛在下午四点开始。",
-    "acceptanceSentence": "We finish school in the {{word}}.",
-    "acceptanceZh": "我们在{{word}}放学。"
+  dog: {
+    sceneId: 4,
+    trainingSentence: 'A brown {{word}} runs in the park.',
+    trainingZh: '一只棕色的狗在公园里奔跑。',
+    acceptanceSentence: "The animal says 'woof' and runs with Tom. It is a {{word}}.",
+    acceptanceZh: '这只动物会汪汪叫，和汤姆一起跑。它是一只{{word}}。',
   },
-  "French": {
-    "sceneId": 3,
-    "trainingSentence": "Mia learns {{word}} at school.",
-    "trainingZh": "米娅在学校学习法语。",
-    "acceptanceSentence": "Bonjour is a {{word}} word.",
-    "acceptanceZh": "Bonjour 是一个{{word}}单词。"
+  bird: {
+    sceneId: 4,
+    trainingSentence: 'A {{word}} sings in the tree.',
+    trainingZh: '一只鸟在树上唱歌。',
+    acceptanceSentence: 'The animal has wings and sings in the tree. It is a {{word}}.',
+    acceptanceZh: '这只动物有翅膀，在树上唱歌。它是一只{{word}}。',
   },
-  "excellent": {
-    "sceneId": 3,
-    "trainingSentence": "Mia gets an {{word}} grade in biology.",
-    "trainingZh": "米娅的生物成绩很优秀。",
-    "acceptanceSentence": "The singer sounds {{word}}.",
-    "acceptanceZh": "这位歌手唱得很{{word}}。"
+  fish: {
+    sceneId: 4,
+    trainingSentence: 'Three {{word}} swim in the pond.',
+    trainingZh: '三条鱼在池塘里游泳。',
+    acceptanceSentence: 'The animal lives in the pond and swims. It is a {{word}}.',
+    acceptanceZh: '这只动物住在池塘里，会游泳。它是一条{{word}}。',
   },
-  "instrument": {
-    "sceneId": 3,
-    "trainingSentence": "The guitar is my favourite {{word}}.",
-    "trainingZh": "吉他是我最喜欢的乐器。",
-    "acceptanceSentence": "Can you play a musical {{word}}?",
-    "acceptanceZh": "你会演奏一种{{word}}吗？"
-  },
-  "singer": {
-    "sceneId": 3,
-    "trainingSentence": "The {{word}} sings a song on stage.",
-    "trainingZh": "歌手在台上唱一首歌。",
-    "acceptanceSentence": "Mia wants to become a famous {{word}}.",
-    "acceptanceZh": "米娅想成为一名著名的{{word}}。"
-  },
-  "future": {
-    "sceneId": 3,
-    "trainingSentence": "Mia thinks about her {{word}} job.",
-    "trainingZh": "米娅想着自己未来的工作。",
-    "acceptanceSentence": "No one knows what the {{word}} will bring.",
-    "acceptanceZh": "没有人知道{{word}}会带来什么。"
-  },
-  "in the future": {
-    "sceneId": 3,
-    "trainingSentence": "Mia wants to be a scientist {{word}}.",
-    "trainingZh": "米娅将来想成为一名科学家。",
-    "acceptanceSentence": "Robots may help us more {{word}}.",
-    "acceptanceZh": "机器人{{word}}可能会更多地帮助我们。"
-  },
-  "term": {
-    "sceneId": 3,
-    "trainingSentence": "We have a test at the end of the {{word}}.",
-    "trainingZh": "我们在学期末有一场考试。",
-    "acceptanceSentence": "The new {{word}} starts in September.",
-    "acceptanceZh": "新{{word}}在九月开始。"
-  },
-  "work out": {
-    "sceneId": 3,
-    "trainingSentence": "Mia can {{word}} the maths problem.",
-    "trainingZh": "米娅能计算出这道数学题。",
-    "acceptanceSentence": "Let's {{word}} how much money we need.",
-    "acceptanceZh": "让我们{{word}}需要多少钱。"
-  },
-  "problem": {
-    "sceneId": 3,
-    "trainingSentence": "The maths {{word}} is hard, but Mia keeps trying.",
-    "trainingZh": "这道数学难题很难，但米娅一直在尝试。",
-    "acceptanceSentence": "Tom asks his teacher for help with a {{word}}.",
-    "acceptanceZh": "汤姆请老师帮助解决一个{{word}}。"
-  },
-  "in class": {
-    "sceneId": 4,
-    "trainingSentence": "Please listen carefully {{word}}.",
-    "trainingZh": "请在课堂上认真倾听。",
-    "acceptanceSentence": "Mia answers a question {{word}}.",
-    "acceptanceZh": "米娅在{{word}}回答了一个问题。"
-  },
-  "magic": {
-    "sceneId": 4,
-    "trainingSentence": "The book is full of {{word}} and wonder.",
-    "trainingZh": "这本书充满魔法和奇妙。",
-    "acceptanceSentence": "The show makes a rabbit disappear with {{word}}.",
-    "acceptanceZh": "这场表演用{{word}}让兔子消失了。"
-  },
-  "life": {
-    "sceneId": 4,
-    "trainingSentence": "The scientist studies plant {{word}}.",
-    "trainingZh": "科学家研究植物生命。",
-    "acceptanceSentence": "Music is an important part of Mia's {{word}}.",
-    "acceptanceZh": "音乐是米娅{{word}}中的重要部分。"
-  },
-  "scientist": {
-    "sceneId": 4,
-    "trainingSentence": "The {{word}} studies animals in the rainforest.",
-    "trainingZh": "这位科学家在雨林研究动物。",
-    "acceptanceSentence": "Mia wants to become a {{word}}.",
-    "acceptanceZh": "米娅想成为一名{{word}}。"
-  },
-  "Baker": {
-    "sceneId": 4,
-    "trainingSentence": "Mr. {{word}} teaches history at school.",
-    "trainingZh": "贝克先生在学校教历史。",
-    "acceptanceSentence": "{{word}} shows the class a map of Canada.",
-    "acceptanceZh": "{{word}}给全班看一张加拿大地图。"
-  },
-  "Mike": {
-    "sceneId": 4,
-    "trainingSentence": "{{word}} plays the guitar in the music room.",
-    "trainingZh": "迈克在音乐教室弹吉他。",
-    "acceptanceSentence": "{{word}} is good with numbers.",
-    "acceptanceZh": "{{word}}善于应付数字。"
-  },
-  "Davis": {
-    "sceneId": 4,
-    "trainingSentence": "Ms. {{word}} sings with the school band.",
-    "trainingZh": "戴维斯女士和校乐队一起唱歌。",
-    "acceptanceSentence": "{{word}} teaches French on Monday.",
-    "acceptanceZh": "{{word}}在星期一教法语。"
-  },
-  "Canada": {
-    "sceneId": 4,
-    "trainingSentence": "Mia's teacher shows a map of {{word}}.",
-    "trainingZh": "米娅的老师展示了一张加拿大地图。",
-    "acceptanceSentence": "{{word}} is far away from China.",
-    "acceptanceZh": "{{word}}离中国很远。"
-  }
 };
 
 const CONTEXT_ACCEPTANCE_STAGES = [
   {
-    "id": 1,
-    "mode": "context-read-zh",
-    "title": "读句辨义",
-    "instruction": "读完整语境句，选出目标词的中文意思",
-    "wordIndexes": [
-      0,
-      4,
-      8,
-      12,
-      16,
-      20,
-      24,
-      28,
-      32
-    ]
+    id: 1,
+    mode: 'context-read-zh',
+    title: '读句辨义',
+    instruction: '读完整语境句，选出目标词的中文意思',
+    wordIndexes: [0, 4, 8, 12, 16],
   },
   {
-    "id": 2,
-    "mode": "context-listen-zh",
-    "title": "听句辨义",
-    "instruction": "听完整语境句，选出目标词的中文意思",
-    "wordIndexes": [
-      1,
-      5,
-      9,
-      13,
-      17,
-      21,
-      25,
-      29,
-      33
-    ]
+    id: 2,
+    mode: 'context-listen-zh',
+    title: '听句辨义',
+    instruction: '听完整语境句，选出目标词的中文意思',
+    wordIndexes: [1, 5, 9, 13, 17],
   },
   {
-    "id": 3,
-    "mode": "context-listen-en",
-    "title": "听句选词",
-    "instruction": "听完整语境句，选出空格处的英文单词",
-    "wordIndexes": [
-      2,
-      6,
-      10,
-      14,
-      18,
-      22,
-      26,
-      30,
-      34
-    ]
+    id: 3,
+    mode: 'context-listen-en',
+    title: '听句选词',
+    instruction: '听完整语境句，选出空格处的英文单词',
+    wordIndexes: [2, 6, 10, 14, 18],
   },
   {
-    "id": 4,
-    "mode": "context-zh-en",
-    "title": "看句选词",
-    "instruction": "读中文语境，选出空格处的英文单词",
-    "wordIndexes": [
-      3,
-      7,
-      11,
-      15,
-      19,
-      23,
-      27,
-      31
-    ]
-  }
+    id: 4,
+    mode: 'context-zh-en',
+    title: '看句选词',
+    instruction: '读中文语境，选出空格处的英文单词',
+    wordIndexes: [3, 7, 11, 15, 19],
+  },
 ];
 
 const STAGES = [
   {
-    "id": 1,
-    "mode": "en-zh",
-    "title": "英译中",
-    "instruction": "看英文单词并听发音，选出正确的中文意思",
-    "wordIndexes": [
-      0,
-      4,
-      8,
-      12,
-      16,
-      20,
-      24,
-      28,
-      32
-    ]
+    id: 1,
+    mode: 'en-zh',
+    title: '英译中',
+    instruction: '看英文单词并听发音，选出正确的中文意思',
+    wordIndexes: [3, 7, 11, 15, 19],
   },
   {
-    "id": 2,
-    "mode": "listen-zh",
-    "title": "听音辨义",
-    "instruction": "听英语发音，选出正确的中文意思",
-    "wordIndexes": [
-      1,
-      5,
-      9,
-      13,
-      17,
-      21,
-      25,
-      29,
-      33
-    ]
+    id: 2,
+    mode: 'listen-zh',
+    title: '听音辨义',
+    instruction: '听英语发音，选出正确的中文意思',
+    wordIndexes: [0, 4, 8, 12, 16],
   },
   {
-    "id": 3,
-    "mode": "listen-en",
-    "title": "听音选词",
-    "instruction": "听英语发音，选出正确的英文单词",
-    "wordIndexes": [
-      2,
-      6,
-      10,
-      14,
-      18,
-      22,
-      26,
-      30,
-      34
-    ]
+    id: 3,
+    mode: 'listen-en',
+    title: '听音选词',
+    instruction: '听英语发音，选出正确的英文单词',
+    wordIndexes: [2, 6, 10, 14, 18],
   },
   {
-    "id": 4,
-    "mode": "zh-en",
-    "title": "中译英",
-    "instruction": "看中文意思，选出正确的英文单词",
-    "wordIndexes": [
-      3,
-      7,
-      11,
-      15,
-      19,
-      23,
-      27,
-      31
-    ]
-  }
+    id: 4,
+    mode: 'zh-en',
+    title: '中译英',
+    instruction: '看中文意思，选出正确的英文单词',
+    wordIndexes: [1, 5, 9, 13, 17],
+  },
 ];
 
 function shuffle(items, random = Math.random) {
@@ -3205,27 +2729,34 @@ function usesEnglishChoices(mode) {
 
 function buildQuestion(word, mode, random) {
   const otherWords = WORDS.filter((candidate) => candidate.en !== word.en);
-  const related = otherWords.filter((candidate) => candidate.group === word.group);
-  const unrelated = otherWords.filter((candidate) => candidate.group !== word.group);
+  const related = otherWords.filter(
+    (candidate) => candidate.group === word.group,
+  );
+  const unrelated = otherWords.filter(
+    (candidate) => candidate.group !== word.group,
+  );
   const valueFor = (candidate) =>
     usesEnglishChoices(mode) ? candidate.en : candidate.zh;
-  const correctValue = valueFor(word);
+  const usedValues = new Set([valueFor(word)]);
   const distractors = [];
-  for (const candidate of [...shuffle(related, random), ...shuffle(unrelated, random)]) {
-    if (
-      valueFor(candidate) === correctValue ||
-      distractors.some((item) => valueFor(item) === valueFor(candidate))
-    ) {
-      continue;
-    }
+
+  for (const candidate of [
+    ...shuffle(related, random),
+    ...shuffle(unrelated, random),
+  ]) {
+    const value = valueFor(candidate);
+    if (usedValues.has(value)) continue;
+    usedValues.add(value);
     distractors.push(candidate);
     if (distractors.length === 3) break;
   }
+
   const choiceWords = shuffle([word, ...distractors], random);
   const choices = choiceWords.map((choiceWord) => ({
     word: choiceWord,
     value: valueFor(choiceWord),
   }));
+  const correctValue = valueFor(word);
 
   return {
     mode,
@@ -3237,19 +2768,28 @@ function buildQuestion(word, mode, random) {
 
 function buildContextChoices(word, language, random) {
   const otherWords = WORDS.filter((candidate) => candidate.en !== word.en);
-  const related = otherWords.filter((candidate) => candidate.group === word.group);
-  const unrelated = otherWords.filter((candidate) => candidate.group !== word.group);
+  const related = otherWords.filter(
+    (candidate) => candidate.group === word.group,
+  );
+  const unrelated = otherWords.filter(
+    (candidate) => candidate.group !== word.group,
+  );
   const valueFor = (candidate) =>
     language === 'zh' ? candidate.zh : candidate.en;
   const usedValues = new Set([valueFor(word)]);
   const distractors = [];
-  for (const candidate of [...shuffle(related, random), ...shuffle(unrelated, random)]) {
+
+  for (const candidate of [
+    ...shuffle(related, random),
+    ...shuffle(unrelated, random),
+  ]) {
     const value = valueFor(candidate);
     if (usedValues.has(value)) continue;
     usedValues.add(value);
     distractors.push(candidate);
     if (distractors.length === 3) break;
   }
+
   const choiceWords = shuffle([word, ...distractors], random);
 
   return choiceWords.map((choiceWord) => ({
@@ -3258,9 +2798,14 @@ function buildContextChoices(word, language, random) {
   }));
 }
 
-function fillContextSentence(template, word, capitalize = false) {
+function fillContextSentence(
+  template,
+  word,
+  capitalize = template.startsWith('{{word}}'),
+) {
+  const shouldCapitalize = Boolean(capitalize) && template.startsWith('{{word}}');
   const display =
-    capitalize || template.startsWith('{{word}}')
+    shouldCapitalize && word
       ? word.charAt(0).toUpperCase() + word.slice(1)
       : word;
   return template.replaceAll('{{word}}', display);
@@ -3313,10 +2858,7 @@ function buildContextAcceptanceQuestion(wordEn, mode, random = Math.random) {
     context,
     sentence: fillContextSentence(context.acceptanceSentence, word.en),
     blankedSentence: blankContextSentence(context.acceptanceSentence),
-    chineseSentence: fillContextSentence(
-      context.acceptanceZh,
-      word.zhInContext || word.zh,
-    ),
+    chineseSentence: fillContextSentence(context.acceptanceZh, word.zh),
     chineseBlankedSentence: blankContextSentence(context.acceptanceZh),
     choices: buildContextChoices(word, language, random),
     correctValue: language === 'zh' ? word.zh : word.en,
@@ -3459,6 +3001,95 @@ function pickParentCheckWords(words = WORDS, random = Math.random, count = 3) {
   return shuffle(words, random).slice(0, count);
 }
 
+const ADAPTIVE_MODES = [
+  'en-zh',
+  'listen-zh',
+  'listen-en',
+  'zh-en',
+  'context-training',
+];
+
+const AUDIO_HIDDEN_MODES = new Set([
+  'zh-en',
+  'context-training',
+  'context-zh-en',
+]);
+
+function audioPolicyForQuestion(question) {
+  if (!question) {
+    return 'none';
+  }
+
+  return AUDIO_HIDDEN_MODES.has(question.mode) ? 'none' : 'play';
+}
+
+function createAdaptiveQueue(
+  words = WORDS,
+  random = Math.random,
+  modeOffset = 0,
+) {
+  const queue = words.map((word, index) => ({
+    wordEn: word.en,
+    mode: ADAPTIVE_MODES[(index + modeOffset) % ADAPTIVE_MODES.length],
+    attempts: 0,
+  }));
+
+  return shuffle(queue, random);
+}
+
+function advanceAdaptiveQueue(queue, correct) {
+  const [item, ...remaining] = queue;
+
+  if (!item) {
+    return { queue: [], needsAcceptance: false };
+  }
+
+  if (correct) {
+    return { queue: remaining, needsAcceptance: false };
+  }
+
+  if (item.attempts >= 2) {
+    return { queue: remaining, needsAcceptance: true };
+  }
+
+  return {
+    queue: [
+      ...remaining,
+      {
+        ...item,
+        mode: item.attempts === 0 ? item.mode : 'en-zh',
+        attempts: item.attempts + 1,
+      },
+    ],
+    needsAcceptance: false,
+  };
+}
+
+function selectAcceptanceWords(
+  priorityWords,
+  words = WORDS.map((word) => word.en),
+  maxQuestions = 20,
+  random = Math.random,
+) {
+  const wordNames = [...new Set(words)];
+  const wordSet = new Set(wordNames);
+  const priority = [...new Set(priorityWords)].filter((word) => wordSet.has(word));
+
+  if (wordNames.length <= maxQuestions) {
+    return wordNames;
+  }
+
+  const target = Math.min(wordNames.length, Math.max(maxQuestions, priority.length));
+  const selected = priority.slice(0, target);
+  const selectedSet = new Set(selected);
+  const remaining = shuffle(
+    wordNames.filter((word) => !selectedSet.has(word)),
+    random,
+  );
+
+  return [...selected, ...remaining.slice(0, target - selected.length)];
+}
+
 const Core = {
   WORDS,
   STAGES,
@@ -3467,6 +3098,7 @@ const Core = {
   CONTEXT_ACCEPTANCE_STAGES,
   shuffle,
   buildQuestion,
+  fillContextSentence,
   buildContextTrainingQuestion,
   buildContextTrainingQuestions,
   buildContextAcceptanceQuestion,
@@ -3484,6 +3116,10 @@ const Core = {
   calculateFinalResult,
   formatDuration,
   pickParentCheckWords,
+  audioPolicyForQuestion,
+  createAdaptiveQueue,
+  advanceAdaptiveQueue,
+  selectAcceptanceWords,
 };
 
 if (typeof module !== 'undefined' && module.exports) {
@@ -3499,13 +3135,11 @@ if (typeof window !== 'undefined') {
       (() => {
   const Core = window.WordQuestCore;
   const AUDIO_BASE = '../assets/audio/v2.1/en-GB-SoniaNeural/';
-  const AUDIO_MANIFEST_URL =
-    '../assets/audio/v2.1/en-GB-SoniaNeural/manifest.json';
+  const AUDIO_MANIFEST_URL = `${AUDIO_BASE}manifest.json`;
   const FIXED_AUDIO_ENABLED = true;
-  const SILENT_AUDIO =
-    'data:audio/wav;base64,UklGRiYAAABXQVZFZm10IBAAAAABAAEAQB8AAIA+AAACABAAZGF0YQIAAAAAAA==';
-  const PROGRESS_KEY = 'word-planet-unit-4-v2.1-unit4-progress-v3';
-  const LEGACY_PROGRESS_KEY = 'word-planet-unit-4-v2.1-unit4-progress-v2';
+  const PROGRESS_KEY = 'word-planet-unit-1-progress-v4';
+  const LEGACY_PROGRESS_KEY = 'word-planet-unit-1-progress-v3';
+  const LEGACY_PROGRESS_KEY_V2 = 'word-planet-unit-1-progress-v2';
   const SCREEN_NAMES = ['home', 'story', 'test', 'milestone', 'result'];
   const screens = {
     home: document.getElementById('home-screen'),
@@ -3548,19 +3182,19 @@ if (typeof window !== 'undefined') {
   const storyReplayButton = document.getElementById('story-replay-button');
   const audioNotice = document.getElementById('audio-notice');
   const audioNoticeText = document.getElementById('audio-notice-text');
+  const speech = 'speechSynthesis' in window ? window.speechSynthesis : null;
   const soundClips = Object.fromEntries(
     [...document.querySelectorAll('audio[data-sound]')].map((audio) => [
       audio.dataset.sound,
       audio,
     ]),
   );
+  let voices = [];
   let autoPlayTimer = null;
   let advanceTimer = null;
   let noticeTimer = null;
   let activeNarrationAudio = null;
-  const narrationPlayer = new Audio();
-  narrationPlayer.preload = 'auto';
-  narrationPlayer.playsInline = true;
+  const narrationCache = new Map();
   const narrationFiles = new Map();
   let narrationManifestPromise = null;
   let questionSequence = 0;
@@ -3569,23 +3203,13 @@ if (typeof window !== 'undefined') {
 
   function createDefaultProgress() {
     return {
-      version: 3,
-      training: {
-        roundIndex: 0,
-        queue: [],
-        mastery: Core.createMasteryRecord(),
-        mistakes: 0,
-        startedAt: null,
-        updatedAt: null,
-        roundReady: false,
-        completed: false,
-        completedAt: null,
-      },
-      contextTraining: {
+      version: 4,
+      adaptive: {
         sceneIndex: 0,
         storySeen: false,
         queue: [],
-        mastery: Core.createContextMastery(),
+        passedWords: {},
+        needsAcceptance: {},
         mistakes: 0,
         startedAt: null,
         updatedAt: null,
@@ -3605,47 +3229,48 @@ if (typeof window !== 'undefined') {
       const saved = JSON.parse(
         window.localStorage.getItem(PROGRESS_KEY) ||
           window.localStorage.getItem(LEGACY_PROGRESS_KEY) ||
+          window.localStorage.getItem(LEGACY_PROGRESS_KEY_V2) ||
           'null',
       );
 
-      if (!saved || !saved.training) {
+      if (!saved) {
         return fallback;
       }
 
-      const training = {
-        ...fallback.training,
-        ...saved.training,
-        mastery: Core.createMasteryRecord(),
-      };
-
-      for (const stage of Core.STAGES) {
-        const savedMode = saved.training.mastery?.[stage.mode] || {};
-
-        for (const word of Core.WORDS) {
-          if (savedMode[word.en] === true) {
-            training.mastery[stage.mode][word.en] = true;
-          }
-        }
+      if (saved.version === 4 && saved.adaptive) {
+        return {
+          ...fallback,
+          ...saved,
+          adaptive: {
+            ...fallback.adaptive,
+            ...saved.adaptive,
+            passedWords: saved.adaptive.passedWords || {},
+            needsAcceptance: saved.adaptive.needsAcceptance || {},
+          },
+          bestPassed: saved.bestPassed || null,
+        };
       }
 
-      const contextTraining = {
-        ...fallback.contextTraining,
-        ...(saved.contextTraining || {}),
-        mastery: Core.createContextMastery(),
-      };
-
+      const passedWords = {};
       for (const word of Core.WORDS) {
-        if (saved.contextTraining?.mastery?.[word.en] === true) {
-          contextTraining.mastery[word.en] = true;
+        const masteredEveryBasicMode = Core.STAGES.every(
+          (stage) => saved.training?.mastery?.[stage.mode]?.[word.en] === true,
+        );
+
+        if (masteredEveryBasicMode) {
+          passedWords[word.en] = true;
         }
       }
 
       return {
         ...fallback,
-        ...saved,
-        version: 3,
-        training,
-        contextTraining,
+        version: 4,
+        adaptive: {
+          ...fallback.adaptive,
+          passedWords,
+          startedAt: saved.training?.startedAt || saved.contextTraining?.startedAt || null,
+          updatedAt: saved.contextTraining?.updatedAt || saved.training?.updatedAt || null,
+        },
         acceptance: saved.acceptance || null,
         bestPassed: saved.bestPassed || null,
       };
@@ -3690,6 +3315,34 @@ if (typeof window !== 'undefined') {
     window.scrollTo({ top: 0, behavior: 'auto' });
   }
 
+  function refreshVoices() {
+    voices = speech ? speech.getVoices() : [];
+  }
+
+  function speakText(text) {
+    if (!speech) {
+      feedback.textContent = '当前浏览器不支持朗读，请尝试使用 Edge、Chrome 或 Safari。';
+      return;
+    }
+
+    speech.cancel();
+    const utterance = new SpeechSynthesisUtterance(text);
+    const englishVoice = voices.find((voice) => /^en([-_]|$)/i.test(voice.lang));
+    utterance.lang = englishVoice?.lang || 'en-US';
+    utterance.rate = 0.78;
+    utterance.pitch = 1;
+
+    if (englishVoice) {
+      utterance.voice = englishVoice;
+    }
+
+    const speakerButton = document.querySelector('[data-action="replay"]');
+    speakerButton?.classList.add('is-speaking');
+    utterance.onend = () => speakerButton?.classList.remove('is-speaking');
+    utterance.onerror = () => speakerButton?.classList.remove('is-speaking');
+    speech.speak(utterance);
+  }
+
   function playEffect(name, volume = 1) {
     const soundClip = soundClips[name];
 
@@ -3718,7 +3371,7 @@ if (typeof window !== 'undefined') {
     })
       .then((response) => {
         if (!response.ok) {
-          throw new Error(`固定语音清单加载失败：${response.status}`);
+          throw new Error(`Audio manifest returned ${response.status}`);
         }
         return response.json();
       })
@@ -3740,29 +3393,23 @@ if (typeof window !== 'undefined') {
     return narrationManifestPromise;
   }
 
-  function narrationAudioFile(narration) {
-    const key = `${narration.kind}\0${normalizeAudioText(narration.text)}`;
-    const filename = narrationFiles.get(key);
-
-    if (!filename) {
-      throw new Error('固定语音清单中没有找到当前内容');
-    }
-
-    return filename;
-  }
-
   function getNarrationAudio(narration) {
-    const filename = narrationAudioFile(narration);
-    const url = `${AUDIO_BASE}${filename}`;
-    const absoluteUrl = new URL(url, window.location.href).href;
+    const manifestFile = narrationFiles.get(
+      `${narration.kind}\0${normalizeAudioText(narration.text)}`,
+    );
+    const url = `${AUDIO_BASE}${
+      manifestFile || `${narration.kind}-${narration.key}.mp3`
+    }`;
+    let audio = narrationCache.get(url);
 
-    if (narrationPlayer.src !== absoluteUrl) {
-      narrationPlayer.src = url;
-      narrationPlayer.dataset.audioId = filename;
-      narrationPlayer.load();
+    if (!audio) {
+      audio = new Audio(url);
+      audio.preload = 'auto';
+      audio.dataset.audioId = manifestFile || `${narration.kind}-${narration.key}`;
+      narrationCache.set(url, audio);
     }
 
-    return narrationPlayer;
+    return audio;
   }
 
   function showAudioNotice(message, persistent = false) {
@@ -3800,36 +3447,32 @@ if (typeof window !== 'undefined') {
       return;
     }
 
-    if (!FIXED_AUDIO_ENABLED) {
-      showAudioNotice('固定语音未启用，请检查音频文件。', true);
-      return;
+    if (FIXED_AUDIO_ENABLED) {
+      try {
+        await loadNarrationManifest();
+      } catch {
+        // Direct word/audio filenames remain a valid fallback.
+      }
     }
 
-    try {
-      await loadNarrationManifest();
-    } catch (error) {
-      showAudioNotice('固定语音清单加载失败，请刷新页面后重试。', true);
-      markManualAudioNeeded();
-      return;
-    }
-
+    speech?.cancel();
     activeNarrationAudio?.pause();
     const audio = getNarrationAudio(narration);
     let fellBack = false;
     activeNarrationAudio = audio;
     audio.currentTime = 0;
 
-    const reportAudioFailure = () => {
+    const fallbackToDeviceVoice = () => {
       if (fellBack) {
         return;
       }
 
       fellBack = true;
-      showAudioNotice('固定语音加载失败，请点击题目里的 🔊 手动重试。', true);
-      markManualAudioNeeded();
+      showAudioNotice('固定语音加载失败，已切换为设备英文语音。');
+      speakText(narration.text);
     };
 
-    audio.onerror = reportAudioFailure;
+    audio.onerror = fallbackToDeviceVoice;
     const playResult = audio.play();
 
     if (playResult) {
@@ -3845,7 +3488,7 @@ if (typeof window !== 'undefined') {
             );
             markManualAudioNeeded();
           } else {
-            reportAudioFailure();
+            fallbackToDeviceVoice();
           }
         });
     }
@@ -3856,21 +3499,16 @@ if (typeof window !== 'undefined') {
       return;
     }
 
-    narrationPlayer.pause();
-    narrationPlayer.src = SILENT_AUDIO;
-    narrationPlayer.dataset.audioId = 'unlock';
-    narrationPlayer.volume = 0;
-    narrationPlayer.currentTime = 0;
-    activeNarrationAudio = narrationPlayer;
-    narrationPlayer
-      .play()
-      .then(() => {
-        narrationPlayer.volume = 1;
-      })
-      .catch(() => {
-        narrationPlayer.volume = 1;
-        // Manual replay remains available if this browser rejects audio.
-      });
+    const clip = soundClips.click?.cloneNode();
+
+    if (!clip) {
+      return;
+    }
+
+    clip.volume = 0;
+    clip.play().catch(() => {
+      // Manual replay remains available if the browser requires another tap.
+    });
   }
 
   function narrationForQuestion(question) {
@@ -3878,9 +3516,13 @@ if (typeof window !== 'undefined') {
       return null;
     }
 
+    if (Core.audioPolicyForQuestion(question) === 'none') {
+      return null;
+    }
+
     if (question.mode === 'context-training') {
       return {
-        kind: 'training',
+        kind: 'train',
         key: question.word.en,
         text: question.sentence,
       };
@@ -3888,17 +3530,9 @@ if (typeof window !== 'undefined') {
 
     if (question.mode.startsWith('context-')) {
       return {
-        kind: 'acceptance',
+        kind: 'accept',
         key: question.word.en,
         text: question.sentence,
-      };
-    }
-
-    if (question.mode === 'zh-en') {
-      return {
-        kind: 'word',
-        key: question.word.en,
-        text: question.word.en,
       };
     }
 
@@ -3914,7 +3548,17 @@ if (typeof window !== 'undefined') {
   }
 
   function currentContextScene() {
-    return Core.CONTEXT_SCENES[progress.contextTraining.sceneIndex];
+    return Core.CONTEXT_SCENES[progress.adaptive.sceneIndex];
+  }
+
+  function adaptiveAudit() {
+    return {
+      passed: Object.values(progress.adaptive.passedWords).filter(Boolean).length,
+      total: Core.WORDS.length,
+      priority: Object.entries(progress.adaptive.needsAcceptance)
+        .filter(([, needsWork]) => needsWork)
+        .map(([wordEn]) => wordEn),
+    };
   }
 
   function escapeHtml(value) {
@@ -3927,7 +3571,7 @@ if (typeof window !== 'undefined') {
   }
 
   function escapeRegExp(value) {
-    return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    return value.replace(/[.*+?^${}()|[\]\\]/g, '\\/*__APP__*/');
   }
 
   function highlightStory(story, targetWords) {
@@ -3935,7 +3579,9 @@ if (typeof window !== 'undefined') {
       (left, right) => right.length - left.length,
     );
     const pattern = new RegExp(
-      `(?<![A-Za-z])(${orderedWords.map(escapeRegExp).join('|')})(?![A-Za-z])`,
+      `(?<![A-Za-z])(${orderedWords
+        .map(escapeRegExp)
+        .join('|')})(?![A-Za-z])`,
       'gi',
     );
 
@@ -3963,34 +3609,33 @@ if (typeof window !== 'undefined') {
     );
   }
 
-  function freshTrainingQueue() {
-    return Core.shuffle(allWordNames());
-  }
-
-  function freshContextQueue() {
-    return Core.shuffle(currentContextScene().wordEns);
-  }
-
   function wordByEnglish(wordEn) {
     return Core.WORDS.find((word) => word.en === wordEn);
   }
 
-  function buildTrainingQuestion() {
-    const training = progress.training;
-    const stage = Core.STAGES[training.roundIndex];
-    const wordEn = training.queue[0];
-    const word = wordByEnglish(wordEn);
-
-    if (!stage || !word) {
-      return null;
-    }
-
-    return Core.buildQuestion(word, stage.mode);
+  function freshAdaptiveQueue() {
+    const scene = currentContextScene();
+    const sceneWords = (scene?.wordEns || [])
+      .map((wordEn) => wordByEnglish(wordEn))
+      .filter(Boolean);
+    return Core.createAdaptiveQueue(
+      sceneWords,
+      Math.random,
+      progress.adaptive.sceneIndex,
+    );
   }
 
   function buildContextQuestion() {
-    const wordEn = progress.contextTraining.queue[0];
-    return wordEn ? Core.buildContextTrainingQuestion(wordEn) : null;
+    const item = progress.adaptive.queue[0];
+    const word = item ? wordByEnglish(item.wordEn) : null;
+
+    if (!item || !word) {
+      return null;
+    }
+
+    return item.mode === 'context-training'
+      ? Core.buildContextTrainingQuestion(item.wordEn)
+      : Core.buildQuestion(word, item.mode);
   }
 
   function buildReviewQuestion() {
@@ -4029,85 +3674,46 @@ if (typeof window !== 'undefined') {
   }
 
   function startPrimaryAction() {
-    const trainingAudit = Core.auditTrainingCoverage(progress.training.mastery);
-    const contextAudit = Core.auditContextCoverage(progress.contextTraining.mastery);
-
-    if (!trainingAudit.complete) {
-      startTraining();
+    if (progress.adaptive.completed) {
+      startAcceptance();
       return;
     }
 
-    if (trainingAudit.complete) {
-      progress.training.completed = true;
-      progress.training.completedAt ||= new Date().toISOString();
-      saveProgress();
-
-      if (!contextAudit.complete) {
-        startContextTraining();
-        return;
-      }
-
-      startAcceptance();
-    }
+    startContextTraining();
   }
 
   function startTraining() {
-    window.clearTimeout(autoPlayTimer);
-    window.clearTimeout(advanceTimer);
-    activeNarrationAudio?.pause();
-    state = createEmptyState();
-    state.phase = 'training';
-    const training = progress.training;
-
-    training.startedAt ||= Date.now();
-
-    if (training.completed || Core.auditTrainingCoverage(training.mastery).complete) {
-      training.completed = true;
-      training.completedAt ||= new Date().toISOString();
-      saveProgress();
-      startContextTraining();
-      return;
-    }
-
-    if (training.roundReady) {
-      const finished = finalizeTrainingRound();
-
-      if (finished.completed) {
-        startContextTraining();
-        return;
-      }
-    }
-
-    if (training.queue.length === 0) {
-      training.queue = freshTrainingQueue();
-    }
-
-    training.updatedAt = new Date().toISOString();
-    saveProgress();
-    showScreen('test');
-    renderQuestion();
+    startContextTraining();
   }
 
   function startAcceptance() {
     window.clearTimeout(autoPlayTimer);
     window.clearTimeout(advanceTimer);
-    activeNarrationAudio?.pause();
-    const audit = Core.auditTrainingCoverage(progress.training.mastery);
-    const contextAudit = Core.auditContextCoverage(progress.contextTraining.mastery);
+    speech?.cancel();
 
-    if (!audit.complete) {
-      startTraining();
-      return;
-    }
-
-    if (!contextAudit.complete) {
+    if (!progress.adaptive.completed) {
       startContextTraining();
       return;
     }
 
+    const selectedWords = Core.selectAcceptanceWords(
+      adaptiveAudit().priority,
+      allWordNames(),
+      20,
+    );
+    const stages = Core.CONTEXT_ACCEPTANCE_STAGES;
+    const questions = Core.shuffle(
+      selectedWords.map((wordEn, index) =>
+        Core.buildContextAcceptanceQuestion(
+          wordEn,
+          stages[index % stages.length].mode,
+        ),
+      ),
+    );
+
     state = createEmptyState();
     state.phase = 'acceptance';
-    state.questions = Core.buildContextAcceptanceTest();
+    state.questions = questions;
     state.startedAt = Date.now();
     state.sessionId = sessionCode();
     showScreen('test');
@@ -4117,7 +3723,7 @@ if (typeof window !== 'undefined') {
   function showStory() {
     window.clearTimeout(autoPlayTimer);
     window.clearTimeout(advanceTimer);
-    activeNarrationAudio?.pause();
+    speech?.cancel();
     const scene = currentContextScene();
 
     if (!scene) {
@@ -4131,26 +3737,23 @@ if (typeof window !== 'undefined') {
     storySceneCount.textContent = `第 ${scene.id} / 4 幕`;
     storyText.innerHTML = highlightStory(scene.story, scene.wordEns);
     storyTranslationText.textContent = scene.storyZh;
-    storyReplayButton.hidden = false;
+    storyReplayButton.hidden = !FIXED_AUDIO_ENABLED;
     document.querySelector('.story-translation').open = false;
     showScreen('story');
   }
 
   function startContextTraining() {
-    const contextTraining = progress.contextTraining;
-    const contextAudit = Core.auditContextCoverage(contextTraining.mastery);
+    const adaptive = progress.adaptive;
 
-    if (contextTraining.completed || contextAudit.complete) {
-      contextTraining.completed = true;
-      contextTraining.completedAt ||= new Date().toISOString();
+    if (adaptive.completed) {
       saveProgress();
       startAcceptance();
       return;
     }
 
-    contextTraining.startedAt ||= Date.now();
+    adaptive.startedAt ||= Date.now();
 
-    if (contextTraining.sceneReady) {
+    if (adaptive.sceneReady) {
       const finished = finalizeContextScene();
 
       if (finished.completed) {
@@ -4162,26 +3765,26 @@ if (typeof window !== 'undefined') {
     state = createEmptyState();
     state.phase = 'context';
 
-    if (!contextTraining.storySeen) {
+    if (!adaptive.storySeen) {
       showStory();
       return;
     }
 
-    if (contextTraining.queue.length === 0) {
-      contextTraining.queue = freshContextQueue();
+    if (adaptive.queue.length === 0) {
+      adaptive.queue = freshAdaptiveQueue();
     }
 
-    contextTraining.updatedAt = new Date().toISOString();
+    adaptive.updatedAt = new Date().toISOString();
     saveProgress();
     showScreen('test');
     renderQuestion();
   }
 
   function beginContextQuiz() {
-    const contextTraining = progress.contextTraining;
-    contextTraining.storySeen = true;
-    contextTraining.queue = freshContextQueue();
-    contextTraining.updatedAt = new Date().toISOString();
+    const adaptive = progress.adaptive;
+    adaptive.storySeen = true;
+    adaptive.queue = freshAdaptiveQueue();
+    adaptive.updatedAt = new Date().toISOString();
     saveProgress();
     state = createEmptyState();
     state.phase = 'context';
@@ -4190,49 +3793,24 @@ if (typeof window !== 'undefined') {
   }
 
   function finalizeContextScene() {
-    const contextTraining = progress.contextTraining;
-    const completedScene = contextTraining.sceneIndex;
-    const audit = Core.auditContextCoverage(contextTraining.mastery);
+    const adaptive = progress.adaptive;
+    const completedScene = adaptive.sceneIndex;
 
-    contextTraining.sceneIndex += 1;
-    contextTraining.storySeen = false;
-    contextTraining.sceneReady = false;
-    contextTraining.queue = [];
+    adaptive.sceneIndex += 1;
+    adaptive.storySeen = false;
+    adaptive.sceneReady = false;
+    adaptive.queue = [];
 
-    if (contextTraining.sceneIndex >= Core.CONTEXT_SCENES.length || audit.complete) {
-      contextTraining.completed = true;
-      contextTraining.completedAt = new Date().toISOString();
+    if (adaptive.sceneIndex >= Core.CONTEXT_SCENES.length) {
+      adaptive.completed = true;
+      adaptive.completedAt = new Date().toISOString();
     }
 
-    contextTraining.updatedAt = new Date().toISOString();
+    adaptive.updatedAt = new Date().toISOString();
     saveProgress();
     return {
       completedScene,
-      completed: contextTraining.completed,
-    };
-  }
-
-  function finalizeTrainingRound() {
-    const training = progress.training;
-    const completedRound = training.roundIndex;
-    const audit = Core.auditTrainingCoverage(training.mastery);
-
-    training.roundIndex += 1;
-    training.roundReady = false;
-
-    if (training.roundIndex >= Core.STAGES.length || audit.complete) {
-      training.completed = true;
-      training.completedAt = new Date().toISOString();
-      training.queue = [];
-    } else {
-      training.queue = freshTrainingQueue();
-    }
-
-    training.updatedAt = new Date().toISOString();
-    saveProgress();
-    return {
-      completedRound,
-      completed: training.completed,
+      completed: adaptive.completed,
     };
   }
 
@@ -4309,25 +3887,17 @@ if (typeof window !== 'undefined') {
   }
 
   function updateProgress() {
-    if (state.phase === 'training') {
-      const audit = Core.auditTrainingCoverage(progress.training.mastery);
-      const roundWordCount = Core.WORDS.length;
-      const masteredThisRound = roundWordCount - progress.training.queue.length;
-      progressFill.style.width = `${(audit.mastered / audit.total) * 100}%`;
-      progressTrack.setAttribute('aria-valuemax', String(audit.total));
-      progressTrack.setAttribute('aria-valuenow', String(audit.mastered));
-      questionCount.textContent = `${masteredThisRound} / ${roundWordCount} 已掌握`;
-      return;
-    }
-
     if (state.phase === 'context') {
-      const audit = Core.auditContextCoverage(progress.contextTraining.mastery);
       const sceneWordCount = currentContextScene()?.wordEns.length || 0;
-      const masteredThisScene = sceneWordCount - progress.contextTraining.queue.length;
-      progressFill.style.width = `${(audit.mastered / audit.total) * 100}%`;
+      const masteredThisScene = Math.max(
+        0,
+        sceneWordCount - progress.adaptive.queue.length,
+      );
+      const audit = adaptiveAudit();
+      progressFill.style.width = `${(audit.passed / audit.total) * 100}%`;
       progressTrack.setAttribute('aria-valuemax', String(audit.total));
-      progressTrack.setAttribute('aria-valuenow', String(audit.mastered));
-      questionCount.textContent = `${masteredThisScene} / ${sceneWordCount} 本幕已掌握`;
+      progressTrack.setAttribute('aria-valuenow', String(audit.passed));
+      questionCount.textContent = `${masteredThisScene} / ${sceneWordCount} 本幕已完成`;
       return;
     }
 
@@ -4342,8 +3912,8 @@ if (typeof window !== 'undefined') {
       return;
     }
 
-    const total = state.questions.length || Core.WORDS.length;
     const completed = state.answeredCount;
+    const total = state.questions.length;
     const displayQuestion = Math.min(completed + 1, total);
     progressFill.style.width = `${(completed / total) * 100}%`;
     progressTrack.setAttribute('aria-valuemax', String(total));
@@ -4352,6 +3922,10 @@ if (typeof window !== 'undefined') {
   }
 
   function replayControlMarkup(label = '再听一遍') {
+    if (!FIXED_AUDIO_ENABLED) {
+      return '';
+    }
+
     return `
       <button
         class="prompt-replay"
@@ -4370,7 +3944,6 @@ if (typeof window !== 'undefined') {
         <div>
           <span class="prompt-label">读句子，选择正确单词</span>
           <p class="context-sentence">${blankContextLine(question.blankedSentence)}</p>
-          ${replayControlMarkup('听句子')}
         </div>
       `;
     }
@@ -4404,7 +3977,6 @@ if (typeof window !== 'undefined') {
           <span class="prompt-label">读中文语境，选择英文单词</span>
           <p class="context-sentence is-zh">${blankContextLine(question.chineseBlankedSentence)}</p>
           <p class="context-caption">根据上下文判断空格处应该是哪个单词。</p>
-          ${replayControlMarkup('听英文提示')}
         </div>
       `;
     }
@@ -4412,15 +3984,25 @@ if (typeof window !== 'undefined') {
     if (question.mode === 'listen-zh' || question.mode === 'listen-en') {
       return `
         <div class="listen-panel">
-          <button
-            class="speaker-button"
-            type="button"
-            data-action="replay"
-            aria-label="播放 ${question.word.en} 的发音"
-          >
-            <span class="speaker-icon" aria-hidden="true">🔊</span>
-          </button>
-          <p class="listen-hint">点击喇叭播放，可反复收听</p>
+          ${
+            FIXED_AUDIO_ENABLED
+              ? `
+                <button
+                  class="speaker-button"
+                  type="button"
+                  data-action="replay"
+                  aria-label="播放 ${question.word.en} 的发音"
+                >
+                  <span class="speaker-icon" aria-hidden="true">🔊</span>
+                </button>
+              `
+              : '<div class="speaker-button is-static" aria-hidden="true"><span class="speaker-icon">🔊</span></div>'
+          }
+          <p class="listen-hint">${
+            FIXED_AUDIO_ENABLED
+              ? '点击喇叭可以再听一遍'
+              : '设备将自动播放英语发音'
+          }</p>
         </div>
       `;
     }
@@ -4430,7 +4012,6 @@ if (typeof window !== 'undefined') {
         <div>
           <span class="prompt-label">中文意思</span>
           <p class="prompt-word is-zh">${question.word.zh}</p>
-          ${replayControlMarkup('听英文')}
         </div>
       `;
     }
@@ -4447,32 +4028,28 @@ if (typeof window !== 'undefined') {
   function renderQuestion() {
     window.clearTimeout(autoPlayTimer);
     window.clearTimeout(advanceTimer);
-    activeNarrationAudio?.pause();
+    speech?.cancel();
     state.locked = false;
 
     let question = currentQuestion();
     let instruction = '';
 
-    if (state.phase === 'training') {
-      const training = progress.training;
-      const stage = Core.STAGES[training.roundIndex];
-      question = buildTrainingQuestion();
-      state.question = question;
-      testTitle.textContent = '全覆盖训练';
-      stageEyebrow.textContent =
-        `训练 ${training.roundIndex + 1}/4 · ${stage.title}`;
-      instruction = stage.instruction;
-      renderStageRail(training.roundIndex);
-    } else if (state.phase === 'context') {
-      const contextTraining = progress.contextTraining;
+    if (state.phase === 'context') {
       const scene = currentContextScene();
+      const item = progress.adaptive.queue[0];
+      const stage = item?.mode === 'context-training'
+        ? {
+            title: '语境选词',
+            instruction: '读英文句子，根据上下文选出正确单词',
+          }
+        : Core.STAGES.find((candidate) => candidate.mode === item?.mode);
       question = buildContextQuestion();
       state.question = question;
-      testTitle.textContent = '语境训练';
+      testTitle.textContent = '混合闯关训练';
       stageEyebrow.textContent =
-        `语境训练 ${scene.id}/4 · ${scene.title}`;
-      instruction = '读英文句子，根据上下文选出正确单词';
-      renderContextSceneRail(contextTraining.sceneIndex);
+        `第 ${scene.id}/4 幕 · ${scene.title} · ${stage?.title || '综合练习'}`;
+      instruction = stage?.instruction || '选择正确答案';
+      renderContextSceneRail(progress.adaptive.sceneIndex);
     } else if (state.phase === 'review') {
       const stage = [
         ...Core.STAGES,
@@ -4488,7 +4065,7 @@ if (typeof window !== 'undefined') {
       );
       testTitle.textContent = '语境验收';
       stageEyebrow.textContent =
-        `最终验收 · 随机第 ${state.questionIndex + 1}/${state.questions.length} · ${stage.title}`;
+        `最终验收 · 第 ${state.questionIndex + 1}/${state.questions.length} 题 · ${stage.title}`;
       instruction = stage.instruction;
       renderMixedStageRail(question.mode, Core.CONTEXT_ACCEPTANCE_STAGES);
     }
@@ -4526,14 +4103,18 @@ if (typeof window !== 'undefined') {
     nextButton.hidden = true;
     nextButton.innerHTML = '继续 <span aria-hidden="true">→</span>';
     updateProgress();
-    liveRegion.textContent = `${instruction}。${question.word.en}。`;
+    liveRegion.textContent = `${instruction}。请选择答案。`;
 
     const narration = narrationForQuestion(question);
 
     if (narration) {
       autoPlayTimer = window.setTimeout(
         () => {
-          playFixedNarration(narration);
+          if (FIXED_AUDIO_ENABLED) {
+            playFixedNarration(narration);
+          } else {
+            speakText(narration.text);
+          }
         },
         260,
       );
@@ -4559,69 +4140,40 @@ if (typeof window !== 'undefined') {
     }
   }
 
-  function answerTraining(question, correct) {
-    const training = progress.training;
-
-    if (correct) {
-      training.mastery = Core.markMastered(
-        training.mastery,
-        question.mode,
-        question.word.en,
-      );
-    } else {
-      training.mistakes += 1;
-    }
-
-    training.queue = Core.advanceTrainingQueue(
-      training.queue,
-      correct,
-      question.word.en,
-    );
-    training.roundReady = correct && training.queue.length === 0;
-    training.updatedAt = new Date().toISOString();
-    saveProgress();
-
-    if (correct) {
-      feedback.innerHTML = '<strong>答对了！</strong> 这个单词在本模式已掌握。';
-    } else {
-      feedback.className = 'feedback is-wrong';
-      feedback.innerHTML =
-        `<strong>已加入本关末尾：</strong> ${question.word.en} = ${question.word.zh}`;
-    }
-
-    nextButton.innerHTML = training.roundReady
-      ? '完成本关 <span aria-hidden="true">→</span>'
-      : '继续 <span aria-hidden="true">→</span>';
-  }
-
   function answerContextTraining(question, correct) {
-    const contextTraining = progress.contextTraining;
+    const adaptive = progress.adaptive;
+    const advanced = Core.advanceAdaptiveQueue(adaptive.queue, correct);
 
     if (correct) {
-      contextTraining.mastery[question.word.en] = true;
+      adaptive.passedWords[question.word.en] = true;
+      delete adaptive.needsAcceptance[question.word.en];
     } else {
-      contextTraining.mistakes += 1;
+      adaptive.mistakes += 1;
     }
 
-    contextTraining.queue = Core.advanceTrainingQueue(
-      contextTraining.queue,
-      correct,
-      question.word.en,
-    );
-    contextTraining.sceneReady = correct && contextTraining.queue.length === 0;
-    contextTraining.updatedAt = new Date().toISOString();
+    if (advanced.needsAcceptance) {
+      adaptive.needsAcceptance[question.word.en] = true;
+    }
+
+    adaptive.queue = advanced.queue;
+    adaptive.sceneReady = adaptive.queue.length === 0;
+    adaptive.updatedAt = new Date().toISOString();
     saveProgress();
 
     if (correct) {
       feedback.innerHTML =
-        '<strong>语境掌握！</strong> 这个单词在本幕已经答对。';
+        '<strong>本词通过！</strong> 继续完成本幕剩余单词。';
+    } else if (adaptive.needsAcceptance[question.word.en]) {
+      feedback.className = 'feedback is-wrong';
+      feedback.innerHTML =
+        `<strong>已加入验收重点：</strong> ${question.word.en} = ${question.word.zh}`;
     } else {
       feedback.className = 'feedback is-wrong';
       feedback.innerHTML =
-        `<strong>已放到本幕末尾：</strong> ${question.sentence} ${question.word.zh}`;
+        `<strong>稍后再练：</strong> ${question.word.en} = ${question.word.zh}`;
     }
 
-    nextButton.innerHTML = contextTraining.sceneReady
+    nextButton.innerHTML = adaptive.sceneReady
       ? '完成本幕 <span aria-hidden="true">→</span>'
       : '继续 <span aria-hidden="true">→</span>';
   }
@@ -4684,9 +4236,7 @@ if (typeof window !== 'undefined') {
     playEffect(correct ? 'correct' : 'wrong', 0.78);
     markOptions(button, question, correct);
 
-    if (state.phase === 'training') {
-      answerTraining(question, correct);
-    } else if (state.phase === 'context') {
+    if (state.phase === 'context') {
       answerContextTraining(question, correct);
     } else if (state.phase === 'review') {
       answerReview(question, correct);
@@ -4710,39 +4260,19 @@ if (typeof window !== 'undefined') {
     }
   }
 
-  function showMilestone(completedRound, completed) {
-    const audit = Core.auditTrainingCoverage(progress.training.mastery);
-    milestoneEyebrow.textContent = completed
-      ? 'TRAINING COMPLETE'
-      : `TRAINING CHECKPOINT ${completedRound + 1}/4`;
-    milestoneTitle.textContent = completed
-      ? '全覆盖训练完成'
-      : `第 ${completedRound + 1} 关完成`;
-    milestoneMessage.textContent = completed
-      ? `${Core.WORDS.length} 个词条 × 4 种模式已经全部掌握。接下来进入四幕校园故事，在完整语境中继续学习这 ${Core.WORDS.length} 个词条。`
-      : '本关所有单词都已答对一次。下一关会更换模式，继续补齐这个单元的剩余训练格。';
-    milestoneLabel.textContent = completed ? '语境训练已解锁' : '已掌握训练格';
-    milestoneCount.textContent = `${audit.mastered} / ${audit.total}`;
-    milestoneButton.innerHTML = completed
-      ? '进入语境训练 <span aria-hidden="true">→</span>'
-      : `进入第 ${completedRound + 2} 关 <span aria-hidden="true">→</span>`;
-    milestoneButton.dataset.action = completed ? 'start-context' : 'continue-training';
-    showScreen('milestone');
-  }
-
   function showContextMilestone(completedScene, completed) {
-    const audit = Core.auditContextCoverage(progress.contextTraining.mastery);
+    const audit = adaptiveAudit();
     milestoneEyebrow.textContent = completed
-      ? 'CONTEXT TRAINING COMPLETE'
-      : `STORY CHECKPOINT ${completedScene + 1}/4`;
+      ? 'ADAPTIVE TRAINING COMPLETE'
+      : `SCENE CHECKPOINT ${completedScene + 1}/${Core.CONTEXT_SCENES.length}`;
     milestoneTitle.textContent = completed
-      ? '语境训练完成'
+      ? '四幕训练完成'
       : `第 ${completedScene + 1} 幕完成`;
     milestoneMessage.textContent = completed
-      ? `四幕故事和 ${Core.WORDS.length} 个语境题已经全部完成。最终验收会使用全新的句子，检查孩子能否把词条迁移到陌生语境。`
-      : `本幕的 ${currentContextScene()?.wordEns.length || 0} 个词条都已在句子中答对。下一幕会继续使用新的生活场景，并复习前面学过的词。`;
-    milestoneLabel.textContent = completed ? '新语境验收已解锁' : '语境掌握进度';
-    milestoneCount.textContent = `${audit.mastered} / ${audit.total}`;
+      ? `四幕故事和混合闯关已完成。接下来会优先验收错词，并从其余词中随机抽查，最多 20 题。`
+      : '本幕已经完成，进度已保存。可以休息，也可以直接进入下一幕。';
+    milestoneLabel.textContent = completed ? '新语境验收已解锁' : '已通过词条';
+    milestoneCount.textContent = `${audit.passed} / ${audit.total}`;
     milestoneButton.innerHTML = completed
       ? '进入新语境验收 <span aria-hidden="true">→</span>'
       : `进入第 ${completedScene + 2} 幕 <span aria-hidden="true">→</span>`;
@@ -4750,20 +4280,8 @@ if (typeof window !== 'undefined') {
     showScreen('milestone');
   }
 
-  function continueTraining() {
-    if (progress.training.completed) {
-      startContextTraining();
-      return;
-    }
-
-    state.phase = 'training';
-    state.locked = false;
-    showScreen('test');
-    renderQuestion();
-  }
-
   function continueContext() {
-    if (progress.contextTraining.completed) {
+    if (progress.adaptive.completed) {
       startAcceptance();
       return;
     }
@@ -4772,17 +4290,6 @@ if (typeof window !== 'undefined') {
   }
 
   function goToNextQuestion() {
-    if (state.phase === 'training') {
-      if (progress.training.roundReady) {
-        const finished = finalizeTrainingRound();
-        showMilestone(finished.completedRound, finished.completed);
-        return;
-      }
-
-      renderQuestion();
-      return;
-    }
-
     if (state.phase === 'review') {
       if (state.reviewQueue.length === 0) {
         showResult();
@@ -4795,7 +4302,7 @@ if (typeof window !== 'undefined') {
     }
 
     if (state.phase === 'context') {
-      if (progress.contextTraining.sceneReady) {
+      if (progress.adaptive.sceneReady) {
         const finished = finalizeContextScene();
         showContextMilestone(finished.completedScene, finished.completed);
         return;
@@ -4870,6 +4377,7 @@ if (typeof window !== 'undefined') {
       wordCoverage: extras.wordCoverage,
       modeCoverage: extras.modeCoverage,
       contextCoverage: extras.contextCoverage,
+      durationSeconds: extras.durationSeconds,
       completedAt: new Date().toISOString(),
       sessionId: state.sessionId,
     };
@@ -4887,20 +4395,23 @@ if (typeof window !== 'undefined') {
 
   function showResult() {
     window.clearTimeout(autoPlayTimer);
-    activeNarrationAudio?.pause();
-    const audit = Core.auditTrainingCoverage(progress.training.mastery);
-    const contextAudit = Core.auditContextCoverage(progress.contextTraining.mastery);
+    speech?.cancel();
+    const audit = adaptiveAudit();
     const wordCoverage = new Set(state.answers.map((answer) => answer.word.en)).size;
     const corrections =
       state.reviewTotal === 0 ? 0 : state.reviewCorrected;
     const correctionTotal = state.reviewTotal;
     const correctionsComplete = corrections === correctionTotal;
+    const durationSeconds = Math.max(
+      0,
+      Math.round((Date.now() - state.startedAt) / 1000),
+    );
     const baseResult = Core.calculateFinalResult(
       state.answers,
       correctionsComplete,
-      audit.complete && contextAudit.complete,
+      progress.adaptive.completed,
     );
-    const passed = baseResult.passed && wordCoverage === Core.WORDS.length;
+    const passed = baseResult.passed;
     const result = { ...baseResult, passed };
     const resultCard = document.querySelector('.result-card');
     const scoreOrbit = document.getElementById('score-orbit');
@@ -4913,8 +4424,9 @@ if (typeof window !== 'undefined') {
       corrections,
       correctionTotal,
       wordCoverage,
-      modeCoverage: audit.mastered,
-      contextCoverage: contextAudit.mastered,
+      modeCoverage: audit.passed,
+      contextCoverage: wordCoverage,
+      durationSeconds,
     });
     renderHomeStatus();
     resultCard.classList.toggle('is-passed', passed);
@@ -4927,22 +4439,24 @@ if (typeof window !== 'undefined') {
     document.getElementById('result-word-coverage').textContent =
       `${wordCoverage} / ${Core.WORDS.length}`;
     document.getElementById('result-mode-coverage').textContent =
-      `${audit.mastered} / ${audit.total}`;
+      `${audit.passed} / ${audit.total}`;
     document.getElementById('result-corrections').textContent =
       correctionTotal === 0 ? '无需订正' : `${corrections} / ${correctionTotal}`;
     document.getElementById('result-context-coverage').textContent =
-      `${contextAudit.mastered} / ${contextAudit.total}`;
+      `${wordCoverage} / ${Core.WORDS.length}`;
     document.getElementById('result-date').textContent = formatDate(new Date());
+    document.getElementById('result-duration').textContent =
+      Core.formatDuration(durationSeconds);
     scoreOrbit.style.setProperty('--score', `${result.accuracy}%`);
 
     if (passed) {
       title.textContent = '通关成功！';
       message.textContent =
-        `${Core.WORDS.length * 4} / ${Core.WORDS.length * 4} 模式、${Core.WORDS.length} / ${Core.WORDS.length} 语境和 ${Core.WORDS.length} / ${Core.WORDS.length} 词条覆盖均已完成，验收错词也已全部订正。`;
+        `${Core.WORDS.length} 个词条的混合闯关已经完成，本次随机验收和错词订正全部达到标准。`;
     } else {
       title.textContent = '验收未达标';
       message.textContent =
-        `首轮需要答对 ${result.requiredScore} 题。错词已经完成订正，可以再次验收。`;
+        `本次需要答对 ${result.requiredScore} 题。验收错词订正完成后可以再次挑战。`;
     }
 
     if (result.wrongWords.length === 0) {
@@ -4966,67 +4480,50 @@ if (typeof window !== 'undefined') {
 
     showScreen('result');
     liveRegion.textContent = passed
-      ? `验收通过，正确率 ${result.accuracy}%，单词和模式覆盖完整。`
+      ? `验收通过，正确率 ${result.accuracy}%。`
       : `验收未达标，正确率 ${result.accuracy}%。`;
   }
 
   function renderHomeStatus() {
-    const audit = Core.auditTrainingCoverage(progress.training.mastery);
-    const contextAudit = Core.auditContextCoverage(progress.contextTraining.mastery);
+    const audit = adaptiveAudit();
     const passed = Boolean(progress.bestPassed);
-    const trainingComplete = progress.training.completed || audit.complete;
-    const trainingActive = Boolean(progress.training.startedAt) && !trainingComplete;
-    const contextComplete =
-      progress.contextTraining.completed || contextAudit.complete;
-    const contextActive =
-      trainingComplete &&
-      !contextComplete &&
-      Boolean(progress.contextTraining.startedAt);
+    const trainingComplete = progress.adaptive.completed;
+    const trainingActive =
+      Boolean(progress.adaptive.startedAt) && !trainingComplete;
 
     unitStatus.classList.toggle('is-passed', passed);
     unitStatus.querySelector('.status-star').textContent = passed ? '★' : '☆';
     retrainButton.hidden =
       !trainingComplete &&
       !trainingActive &&
-      !progress.training.startedAt &&
-      !contextActive &&
-      !progress.contextTraining.startedAt &&
+      !progress.adaptive.startedAt &&
       !progress.bestPassed;
 
     if (trainingActive) {
-      unitStatusTitle.textContent = '重新训练中';
-      unitStatusDetail.textContent = `${audit.mastered} / ${audit.total} 模式已掌握`;
-    } else if (contextActive) {
-      unitStatusTitle.textContent = '语境训练中';
-      unitStatusDetail.textContent = `${contextAudit.mastered} / ${contextAudit.total} 语境已掌握`;
+      unitStatusTitle.textContent = '混合闯关中';
+      unitStatusDetail.textContent = `${audit.passed} / ${audit.total} 词条已通过`;
     } else if (passed) {
       unitStatusTitle.textContent = '本单元已通关';
       unitStatusDetail.textContent =
-        `验收 ${progress.bestPassed.accuracy}% · 语境 ${contextAudit.mastered}/${contextAudit.total}`;
+        `验收 ${progress.bestPassed.accuracy}% · 错词优先抽查`;
     } else if (trainingComplete) {
-      unitStatusTitle.textContent = contextComplete ? '语境训练已完成' : '基础训练已完成';
-      unitStatusDetail.textContent = contextComplete
-        ? `${contextAudit.total} / ${contextAudit.total} · 等待新语境验收`
-        : `${audit.total} / ${audit.total} · 下一步进入语境训练`;
-    } else if (audit.mastered > 0 || progress.training.startedAt) {
+      unitStatusTitle.textContent = '四幕闯关已完成';
+      unitStatusDetail.textContent =
+        `${audit.passed} / ${audit.total} · 等待新语境验收`;
+    } else if (audit.passed > 0 || progress.adaptive.startedAt) {
       unitStatusTitle.textContent = '训练进行中';
-      unitStatusDetail.textContent = `${audit.mastered} / 80 模式已掌握`;
+      unitStatusDetail.textContent = `${audit.passed} / ${audit.total} 词条已通过`;
     } else {
       unitStatusTitle.textContent = '等待启程';
-      unitStatusDetail.textContent = `0 / ${audit.total} 训练格`;
+      unitStatusDetail.textContent = `0 / ${audit.total} 词条`;
     }
 
-    let buttonLabel = '开始全覆盖训练';
+    let buttonLabel = '开始混合闯关';
 
     if (!trainingComplete) {
-      buttonLabel = audit.mastered > 0 || progress.training.startedAt
-        ? '继续全覆盖训练'
-        : '开始全覆盖训练';
-    } else if (!contextComplete) {
-      buttonLabel =
-        contextAudit.mastered > 0 || progress.contextTraining.startedAt
-          ? '继续语境训练'
-          : '进入语境训练';
+      buttonLabel = audit.passed > 0 || progress.adaptive.startedAt
+        ? '继续混合闯关'
+        : '开始混合闯关';
     } else {
       buttonLabel = passed ? '再次验收' : '进入新语境验收';
     }
@@ -5056,11 +4553,11 @@ if (typeof window !== 'undefined') {
     const bestPassed = progress.bestPassed;
     progress = createDefaultProgress();
     progress.bestPassed = bestPassed;
-    progress.training.startedAt = Date.now();
+    progress.adaptive.startedAt = Date.now();
     saveProgress();
     closeResetDialog();
     state = createEmptyState();
-    startTraining();
+    startContextTraining();
   }
 
   document.addEventListener('click', (event) => {
@@ -5093,8 +4590,6 @@ if (typeof window !== 'undefined') {
       startAcceptance();
     } else if (action === 'next') {
       goToNextQuestion();
-    } else if (action === 'continue-training') {
-      continueTraining();
     } else if (action === 'replay') {
       window.clearTimeout(autoPlayTimer);
       const question = currentQuestion();
@@ -5116,7 +4611,7 @@ if (typeof window !== 'undefined') {
       hideAudioNotice();
     } else if (action === 'home') {
       window.clearTimeout(advanceTimer);
-      activeNarrationAudio?.pause();
+      speech?.cancel();
       showScreen('home');
       renderHomeStatus();
     } else if (action === 'scroll-rules') {
@@ -5135,13 +4630,14 @@ if (typeof window !== 'undefined') {
     }
   });
 
-      loadNarrationManifest().catch(() => {
-        // The manual replay fallback reports a useful message on first click.
-      });
+  if (speech) {
+    refreshVoices();
+    speech.addEventListener?.('voiceschanged', refreshVoices);
+  }
 
   window.addEventListener('beforeunload', () => {
     window.clearTimeout(advanceTimer);
-    activeNarrationAudio?.pause();
+    speech?.cancel();
   });
   renderHomeStatus();
 })();
